@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.crunchbase.com/v/1/company/kmart.js?api_key=an35bya6x7ktkm5z7q3q6dvg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.crunchbase.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Date:
+      - Thu, 06 Feb 2014 13:22:27 GMT
+      Etag:
+      - '"5bbb7236a33068d89766d4cc7d5912b6"'
+      Server:
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+      Status:
+      - 200 OK
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1b-18.mashery.com
+      X-Powered-By:
+      - ''
+      X-Runtime:
+      - '0.00432'
+      Content-Length:
+      - '807'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {"name": "KMart",
+         "permalink": "kmart",
+         "crunchbase_url": "http://www.crunchbase.com/company/kmart",
+         "homepage_url": null,
+         "blog_url": null,
+         "blog_feed_url": null,
+         "twitter_username": null,
+         "category_code": null,
+         "number_of_employees": null,
+         "founded_year": null,
+         "founded_month": null,
+         "founded_day": null,
+         "deadpooled_year": null,
+         "deadpooled_month": null,
+         "deadpooled_day": null,
+         "deadpooled_url": null,
+         "tag_list": null,
+         "alias_list": null,
+         "email_address": null,
+         "phone_number": null,
+         "description": null,
+         "created_at": "Thu May 02 14:31:17 UTC 2013",
+         "updated_at": "Thu May 02 14:31:17 UTC 2013",
+         "overview": null,
+         "image": null,
+         "products":
+          [],
+         "relationships":
+          [{"is_past": true,
+            "title": "President / COO / CEO",
+            "person":
+             {"first_name": "Julian",
+              "last_name": "C. Day",
+              "permalink": "julian-c-day"}},
+           {"is_past": true,
+            "title": "President and Chief Operating Officer ( USA) \u0026 former member",
+            "person":
+             {"first_name": "Warren",
+              "last_name": "Flick",
+              "permalink": "warren-flick"}},
+           {"is_past": true,
+            "title": "DVP \u0026 Chief Systems Architect",
+            "person":
+             {"first_name": "Paul",
+              "last_name": "Gaffney",
+              "permalink": "paul-gaffney"}},
+           {"is_past": true,
+            "title": "President and Chief Executive Officer",
+            "person":
+             {"first_name": "Aylwin",
+              "last_name": "B. Lewis",
+              "permalink": "aylwin-b-lewis"}},
+           {"is_past": true,
+            "title": "SVP, HR",
+            "person":
+             {"first_name": "Tim",
+              "last_name": "Crow",
+              "permalink": "tim-crow"}},
+           {"is_past": true,
+            "title": "Manager, Technology",
+            "person":
+             {"first_name": "Thomas",
+              "last_name": "DeCoe",
+              "permalink": "thomas-decoe"}},
+           {"is_past": true,
+            "title": "Corporate Strategy Intern/Consultant",
+            "person":
+             {"first_name": "Melinda",
+              "last_name": "Byerley",
+              "permalink": "melinda-byerley"}}],
+         "competitions":
+          [],
+         "providerships":
+          [],
+         "total_money_raised": "$0",
+         "funding_rounds":
+          [],
+         "investments":
+          [],
+         "acquisition": null,
+         "acquisitions":
+          [],
+         "offices":
+          [],
+         "milestones":
+          [],
+         "ipo": null,
+         "video_embeds":
+          [],
+         "screenshots":
+          [],
+         "external_links":
+          [],
+         "partners":
+          []}
+    http_version: 
+  recorded_at: Thu, 06 Feb 2014 13:22:28 GMT
+recorded_with: VCR 2.8.0

@@ -1,6 +1,8 @@
 # Cbase
 
-TODO: Write a gem description
+Gets list of all New York City companies from CrunchBase database. Makes CSV file (spreadsheet) of this info for each company:
+
+"Company", "Website", "Phone", "Address", "Email", "Team Page", plus the top 3 people and their jobs.
 
 ## Installation
 

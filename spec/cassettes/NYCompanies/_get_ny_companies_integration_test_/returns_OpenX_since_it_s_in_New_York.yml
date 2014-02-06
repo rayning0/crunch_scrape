@@ -1,0 +1,1573 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.crunchbase.com/v/1/company/openx.js?api_key=an35bya6x7ktkm5z7q3q6dvg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.crunchbase.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Date:
+      - Thu, 06 Feb 2014 13:22:26 GMT
+      Etag:
+      - '"c72a74fa8aedf04148cdc896d3056182"'
+      Server:
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+      Status:
+      - 200 OK
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1c-13.mashery.com
+      X-Powered-By:
+      - ''
+      X-Runtime:
+      - '0.01170'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {"name": "OpenX",
+         "permalink": "openx",
+         "crunchbase_url": "http://www.crunchbase.com/company/openx",
+         "homepage_url": "http://www.openx.com",
+         "blog_url": "http://www.openx.com/blog",
+         "blog_feed_url": "",
+         "twitter_username": "OpenX",
+         "category_code": "advertising",
+         "number_of_employees": 310,
+         "founded_year": 2008,
+         "founded_month": 5,
+         "founded_day": 1,
+         "deadpooled_year": null,
+         "deadpooled_month": null,
+         "deadpooled_day": null,
+         "deadpooled_url": null,
+         "tag_list": "ad-server, ad-serving, ad-exchange, yield-optimization, content-valuation",
+         "alias_list": "",
+         "email_address": "hello@openx.com",
+         "phone_number": "626-466-1141",
+         "description": "OpenX",
+         "created_at": "Wed Jun 13 18:23:43 UTC 2007",
+         "updated_at": "Fri Jan 31 09:36:40 UTC 2014",
+         "overview": "\u003Cp\u003EOpenX is a global leader in digital and mobile advertising technology. OpenX\u2019s vision is to unleash the full economic potential of digital media companies. OpenX\u2019s unified monetization platform combines an ad server and a real-time bidding ad exchange to deliver the highest revenue across every digitally connected screen.\u003C/p\u003E\n\n\u003Cp\u003EOpenX Technologies, Inc., a wholly owned subsidiary of OpenX Software Ltd., is based in Los Angeles and is backed by leading investors including Accel Partners, Index Ventures, SAP Ventures, and Samsung Venture Investment Corporation.\u003C/p\u003E",
+         "image":
+          {"available_sizes":
+            [[[150,
+               55],
+              "assets/images/resized/0000/4165/4165v11-max-150x150.png"],
+             [[250,
+               92],
+              "assets/images/resized/0000/4165/4165v11-max-250x250.png"],
+             [[450,
+               165],
+              "assets/images/resized/0000/4165/4165v11-max-450x450.png"]],
+           "attribution": null},
+         "products":
+          [{"name": "OpenX Ad Server",
+            "permalink": "openads"},
+           {"name": "OpenX Ad Exchange",
+            "permalink": "openx-hosted"},
+           {"name": "OpenX SSP",
+            "permalink": "openx-mods"}],
+         "relationships":
+          [{"is_past": false,
+            "title": "VP, Engineering \u0026 Chief Architect",
+            "person":
+             {"first_name": "Jin",
+              "last_name": "Yu",
+              "permalink": "jin-yu"}},
+           {"is_past": false,
+            "title": "Chief Operating Officer \u0026 President",
+            "person":
+             {"first_name": "John",
+              "last_name": "Gentry",
+              "permalink": "john-gentry-2"}},
+           {"is_past": false,
+            "title": "Chief Executive Officer",
+            "person":
+             {"first_name": "Tim",
+              "last_name": "Cadogan",
+              "permalink": "tim-cadogan"}},
+           {"is_past": false,
+            "title": "SVP \u0026 Chief Legal Officer",
+            "person":
+             {"first_name": "Douglas",
+              "last_name": "McPherson",
+              "permalink": "douglas-mcpherson"}},
+           {"is_past": false,
+            "title": "SVP \u0026 Chief Revenue Officer",
+            "person":
+             {"first_name": "Jason",
+              "last_name": "Fairchild",
+              "permalink": "jason-fairchild"}},
+           {"is_past": false,
+            "title": "VP, Monetization Product",
+            "person":
+             {"first_name": "Jason",
+              "last_name": "Ramsey",
+              "permalink": "jason-ramsey"}},
+           {"is_past": false,
+            "title": "VP, National Publisher Business Development",
+            "person":
+             {"first_name": "Trevor",
+              "last_name": "Thomas",
+              "permalink": "trevor-thomas"}},
+           {"is_past": false,
+            "title": "VP, Corporate Development",
+            "person":
+             {"first_name": "Roger",
+              "last_name": "Corn",
+              "permalink": "roger-corn"}},
+           {"is_past": false,
+            "title": "VP, Engineering",
+            "person":
+             {"first_name": "Michael",
+              "last_name": "Todd",
+              "permalink": "michael-todd"}},
+           {"is_past": false,
+            "title": "SVP, Products",
+            "person":
+             {"first_name": "Nicholas",
+              "last_name": "Cumins",
+              "permalink": "nicholas-cumins"}},
+           {"is_past": false,
+            "title": "SVP, Monetization Platform",
+            "person":
+             {"first_name": "Qasim",
+              "last_name": "Saifee",
+              "permalink": "qasim-saifee"}},
+           {"is_past": false,
+            "title": "Chair, Board of Directors",
+            "person":
+             {"first_name": "Jonathan",
+              "last_name": "Miller",
+              "permalink": "jonathan-miller"}},
+           {"is_past": false,
+            "title": "Head of Communications",
+            "person":
+             {"first_name": "Al",
+              "last_name": "Duncan",
+              "permalink": "al-duncan"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Bernard",
+              "last_name": "Dall\u00e9",
+              "permalink": "bernard-dall"}},
+           {"is_past": false,
+            "title": "GM, Advertising Solutions",
+            "person":
+             {"first_name": "Paul",
+              "last_name": "Sternhell",
+              "permalink": "paul-sternhell"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Nino",
+              "last_name": "Marakovic",
+              "permalink": "nino-marakovic"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Damon",
+              "last_name": "Reeve",
+              "permalink": "damon-reeve"}},
+           {"is_past": false,
+            "title": "SVP, Engineering",
+            "person":
+             {"first_name": "Manoj",
+              "last_name": "Goyal",
+              "permalink": "manoj-goyal"}},
+           {"is_past": false,
+            "title": "VP, Marketing",
+            "person":
+             {"first_name": "Matt",
+              "last_name": "Reid",
+              "permalink": "matt-reid"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Howard",
+              "last_name": "Hochhauser",
+              "permalink": "howard-hochhauser"}},
+           {"is_past": false,
+            "title": "Regional Director, DACH",
+            "person":
+             {"first_name": "Dimo",
+              "last_name": "Velev",
+              "permalink": "dimo-velev"}},
+           {"is_past": false,
+            "title": "GM, Publisher Business Development - East",
+            "person":
+             {"first_name": "Teri",
+              "last_name": "Gallo",
+              "permalink": "teri-gallo"}},
+           {"is_past": false,
+            "title": "Duplicate",
+            "person":
+             {"first_name": "Jon",
+              "last_name": "Fox",
+              "permalink": "jon-fox-7"}},
+           {"is_past": false,
+            "title": "Chief Financial Officer",
+            "person":
+             {"first_name": "Rick",
+              "last_name": "Gombos",
+              "permalink": "rick-gombos"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Andrew",
+              "last_name": "Braccia",
+              "permalink": "andrew-braccia"}},
+           {"is_past": false,
+            "title": "Board of Advisors",
+            "person":
+             {"first_name": "John",
+              "last_name": "Linden",
+              "permalink": "john-linden"}},
+           {"is_past": false,
+            "title": "Managing Director, Japan",
+            "person":
+             {"first_name": "Nick",
+              "last_name": "Kovac",
+              "permalink": "nick-kovac"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Nicholas",
+              "last_name": "K. Pianim",
+              "permalink": "nicholas-k-pianim"}},
+           {"is_past": false,
+            "title": "Advisor",
+            "person":
+             {"first_name": "Qayed",
+              "last_name": "Shareef",
+              "permalink": "qayed-shareef"}},
+           {"is_past": false,
+            "title": "Professional Services \u0026 Support",
+            "person":
+             {"first_name": "Arlen",
+              "last_name": "Coupland",
+              "permalink": "arlen-coupland"}},
+           {"is_past": false,
+            "title": "Advisor",
+            "person":
+             {"first_name": "Anke",
+              "last_name": "Audenaert",
+              "permalink": "anke-audenaert"}},
+           {"is_past": false,
+            "title": "Director of Mobile",
+            "person":
+             {"first_name": "Jonathan",
+              "last_name": "Myron",
+              "permalink": "jonathan-myron"}},
+           {"is_past": false,
+            "title": "Sr. Director, Mobile Product",
+            "person":
+             {"first_name": "Martin",
+              "last_name": "Price",
+              "permalink": "martin-price"}},
+           {"is_past": false,
+            "title": "User Experience Lead",
+            "person":
+             {"first_name": "Jon",
+              "last_name": "Fox",
+              "permalink": "jon-fox-6"}},
+           {"is_past": false,
+            "title": "Managing Director, EMEA",
+            "person":
+             {"first_name": "Cameran",
+              "last_name": "Harman",
+              "permalink": "cameran-harman"}},
+           {"is_past": true,
+            "title": "Co-founder",
+            "person":
+             {"first_name": "Scott",
+              "last_name": "Switzer",
+              "permalink": "scott-switzer"}},
+           {"is_past": true,
+            "title": "CEO",
+            "person":
+             {"first_name": "James",
+              "last_name": "Bilefield",
+              "permalink": "james-bilefield"}},
+           {"is_past": true,
+            "title": "Founder, Board Member",
+            "person":
+             {"first_name": "Scott",
+              "last_name": "Switzer",
+              "permalink": "scott-switzer"}},
+           {"is_past": true,
+            "title": "CTO",
+            "person":
+             {"first_name": "John",
+              "last_name": "Linden",
+              "permalink": "john-linden"}},
+           {"is_past": true,
+            "title": "SVP, Strategy and Business Development",
+            "person":
+             {"first_name": "Elizabeth",
+              "last_name": "Osder",
+              "permalink": "elizabeth-osder"}},
+           {"is_past": true,
+            "title": "VP, Product Management",
+            "person":
+             {"first_name": "Matt",
+              "last_name": "Plummer",
+              "permalink": "matt-plummer"}},
+           {"is_past": true,
+            "title": "Publisher Solutions VP",
+            "person":
+             {"first_name": "Ajitpal",
+              "last_name": "Pannu",
+              "permalink": "ajitpal-pannu"}},
+           {"is_past": true,
+            "title": "Director Engineering",
+            "person":
+             {"first_name": "Jennifer",
+              "last_name": "Langdon",
+              "permalink": "jennifer-langdon"}},
+           {"is_past": true,
+            "title": "Head of Engineering",
+            "person":
+             {"first_name": "Michael",
+              "last_name": "Lum",
+              "permalink": "michael-lum"}},
+           {"is_past": true,
+            "title": "Director of Communications",
+            "person":
+             {"first_name": "James",
+              "last_name": "Aldous",
+              "permalink": "james-aldous"}},
+           {"is_past": true,
+            "title": "General Manager, Publisher Business",
+            "person":
+             {"first_name": "Jason",
+              "last_name": "White",
+              "permalink": "jason-white-3"}},
+           {"is_past": true,
+            "title": "Duplicate",
+            "person":
+             {"first_name": "Jason",
+              "last_name": "Fairchild",
+              "permalink": "jason-fairchild"}},
+           {"is_past": true,
+            "title": "Mobile Consultant",
+            "person":
+             {"first_name": "Eli",
+              "last_name": "Calder\u00f3n Morin",
+              "permalink": "eli-caldern-morin"}},
+           {"is_past": true,
+            "title": "VP, Publisher Business Development",
+            "person":
+             {"first_name": "Sam",
+              "last_name": "Cox",
+              "permalink": "sam-cox"}},
+           {"is_past": true,
+            "title": "Advisor",
+            "person":
+             {"first_name": "Kent",
+              "last_name": "Wakeford",
+              "permalink": "kent-wakeford"}},
+           {"is_past": true,
+            "title": "Managing Director EMEA",
+            "person":
+             {"first_name": "Vincent",
+              "last_name": "Pelillo",
+              "permalink": "vincent-pelillo"}},
+           {"is_past": true,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Saul",
+              "last_name": "Klein",
+              "permalink": "saul-klein"}},
+           {"is_past": true,
+            "title": "Managing Director, EMEA",
+            "person":
+             {"first_name": "Vincent",
+              "last_name": "Pelillo",
+              "permalink": "vincent-pelillo-2"}},
+           {"is_past": true,
+            "title": "GM, Publisher Team East/Enterprise",
+            "person":
+             {"first_name": "Eric",
+              "last_name": "Rosenthal",
+              "permalink": "eric-rosenthal-2"}},
+           {"is_past": true,
+            "title": "Managing Director, EMEA",
+            "person":
+             {"first_name": "Ken",
+              "last_name": "Parnham",
+              "permalink": "ken-parnham"}},
+           {"is_past": true,
+            "title": "Duplicate",
+            "person":
+             {"first_name": "Douglas",
+              "last_name": "McPherson",
+              "permalink": "douglas-mcpherson"}},
+           {"is_past": true,
+            "title": "Director Of Engineering",
+            "person":
+             {"first_name": "David",
+              "last_name": "Tannenbaum",
+              "permalink": "david-tannenbaum"}},
+           {"is_past": true,
+            "title": "Head of Worldwide Services",
+            "person":
+             {"first_name": "Joe",
+              "last_name": "Ayyoub",
+              "permalink": "joe-ayyoub"}},
+           {"is_past": true,
+            "title": "Director of User Experience",
+            "person":
+             {"first_name": "Charles",
+              "last_name": "Brewer",
+              "permalink": "charles-brewer"}},
+           {"is_past": true,
+            "title": "Senior Director, Publisher Business",
+            "person":
+             {"first_name": "Sal",
+              "last_name": "Leone",
+              "permalink": "sal-leone"}}],
+         "competitions":
+          [{"competitor":
+             {"name": "DoubleClick",
+              "permalink": "doubleclick"}},
+           {"competitor":
+             {"name": "Rubicon Project",
+              "permalink": "rubiconproject"}},
+           {"competitor":
+             {"name": "PubMatic",
+              "permalink": "pubmatic"}}],
+         "providerships":
+          [],
+         "total_money_raised": "$75.5M",
+         "funding_rounds":
+          [{"id": 31,
+            "round_code": "a",
+            "source_url": "http://www.techcrunch.com/2007/06/13/openads-opensource-project-raises-5-million/",
+            "source_description": "",
+            "raised_amount": 5000000.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2007,
+            "funded_month": 6,
+            "funded_day": 1,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "First Round Capital",
+                 "permalink": "first-round-capital"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Index Ventures",
+                 "permalink": "index-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mangrove Capital Partners",
+                 "permalink": "mangrove-capital-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "O'Reilly AlphaTech Ventures",
+                 "permalink": "o-reilly-alphatech-ventures"},
+               "person": null}]},
+           {"id": 1401,
+            "round_code": "b",
+            "source_url": "http://www.thealarmclock.com/mt/archives/2008/01/openads_raises.html",
+            "source_description": "",
+            "raised_amount": 15500000.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2008,
+            "funded_month": 1,
+            "funded_day": 1,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "Accel Partners",
+                 "permalink": "accel-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "First Round Capital",
+                 "permalink": "first-round-capital"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Index Ventures",
+                 "permalink": "index-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mangrove Capital Partners",
+                 "permalink": "mangrove-capital-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "O'Reilly AlphaTech Ventures",
+                 "permalink": "o-reilly-alphatech-ventures"},
+               "person": null}]},
+           {"id": 6129,
+            "round_code": "c",
+            "source_url": "http://www.techcrunch.com/2009/05/26/openx-keeps-on-growing-raises-10-million-more/",
+            "source_description": "OpenX Keeps On Growing, Raises $10 Million More",
+            "raised_amount": 10000000.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2009,
+            "funded_month": 5,
+            "funded_day": 26,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "DAG Ventures",
+                 "permalink": "dag-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Accel Partners",
+                 "permalink": "accel-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Index Ventures",
+                 "permalink": "index-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mangrove Capital Partners",
+                 "permalink": "mangrove-capital-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "First Round Capital",
+                 "permalink": "first-round-capital"},
+               "person": null},
+              {"company": null,
+               "financial_org": null,
+               "person":
+                {"first_name": "Jonathan",
+                 "last_name": "Miller",
+                 "permalink": "jonathan-miller"}}]},
+           {"id": 23286,
+            "round_code": "d",
+            "source_url": "http://techcrunch.com/2011/05/31/openx-secures-20-million-in-series-d-funding-to-fuel-growth-acquisitions/",
+            "source_description": "OpenX Secures $20 Million In Series D Funding To Fuel Growth, Acquisitions",
+            "raised_amount": 20000000.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2011,
+            "funded_month": 5,
+            "funded_day": 31,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "SAP Ventures",
+                 "permalink": "sap-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "AOL Ventures",
+                 "permalink": "aol-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Presidio Ventures",
+                 "permalink": "presidio-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mitsui Global Investment",
+                 "permalink": "mitsui-global-investment"},
+               "person": null}]},
+           {"id": 34869,
+            "round_code": "e",
+            "source_url": "http://www.sec.gov/Archives/edgar/data/1520718/000152071813000003/xslFormDX01/primary_doc.xml",
+            "source_description": "OpenX Raises $25 Million in Round Led by Samsung Venture Unit",
+            "raised_amount": 25011200.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2013,
+            "funded_month": 1,
+            "funded_day": 17,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "Samsung Ventures",
+                 "permalink": "samsung-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Accel Partners",
+                 "permalink": "accel-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Index Ventures",
+                 "permalink": "index-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "SAP Ventures",
+                 "permalink": "sap-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mitsui Global Investment",
+                 "permalink": "mitsui-global-investment"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Presidio Ventures",
+                 "permalink": "presidio-ventures"},
+               "person": null},
+              {"company":
+                {"name": "Cyber Communications",
+                 "permalink": "cyber-communications"},
+               "financial_org": null,
+               "person": null}]}],
+         "investments":
+          [],
+         "acquisition": null,
+         "acquisitions":
+          [{"price_amount": null,
+            "price_currency_code": "USD",
+            "term_code": null,
+            "source_url": "http://mediadecoder.blogs.nytimes.com/2012/10/28/openx-acquires-jumptime/",
+            "source_description": "OpenX acquires JumpTime",
+            "acquired_year": 2012,
+            "acquired_month": 10,
+            "acquired_day": 29,
+            "company":
+             {"name": "JumpTime",
+              "permalink": "jumptime"}},
+           {"price_amount": null,
+            "price_currency_code": "USD",
+            "term_code": null,
+            "source_url": "http://techcrunch.com/2012/02/27/openx-acquires-supply-side-platform-liftdna/",
+            "source_description": "TechCrunch",
+            "acquired_year": 2012,
+            "acquired_month": 2,
+            "acquired_day": 27,
+            "company":
+             {"name": "LiftDNA",
+              "permalink": "liftdna"}}],
+         "offices":
+          [{"description": "Headquarters",
+            "address1": "888 East Walnut Street",
+            "address2": "",
+            "zip_code": "91101",
+            "city": "Pasadena",
+            "state_code": "CA",
+            "country_code": "USA",
+            "latitude": 34.1494713,
+            "longitude": -118.1327468},
+           {"description": "New York",
+            "address1": "584 Broadway",
+            "address2": "8th Floor",
+            "zip_code": "10012",
+            "city": "New York",
+            "state_code": "NY",
+            "country_code": "USA",
+            "latitude": null,
+            "longitude": null},
+           {"description": "London",
+            "address1": "1 Maple Place",
+            "address2": "",
+            "zip_code": "W1T 4BB",
+            "city": "London",
+            "state_code": null,
+            "country_code": "GBR",
+            "latitude": null,
+            "longitude": null},
+           {"description": "Tokyo",
+            "address1": "4-12-25 Minami-Azabu",
+            "address2": "Minato-ku",
+            "zip_code": "1060047",
+            "city": "Tokyo",
+            "state_code": null,
+            "country_code": "JPN",
+            "latitude": null,
+            "longitude": null},
+           {"description": "Munich",
+            "address1": "Maximilianstrasse 35a",
+            "address2": "",
+            "zip_code": "80539",
+            "city": "Munich",
+            "state_code": null,
+            "country_code": "DEU",
+            "latitude": null,
+            "longitude": null}],
+         "milestones":
+          [{"id": 21834,
+            "description": "Acquisition of SSP LiftDNA",
+            "stoned_year": 2012,
+            "stoned_month": 2,
+            "stoned_day": 27,
+            "source_url": "http://openx.com/content/openx-acquires-breakthrough-supply-side-platform-liftdna",
+            "source_text": null,
+            "source_description": "Press Release",
+            "stoneable_type": "Company",
+            "stoned_value": null,
+            "stoned_value_type": null,
+            "stoned_acquirer": null,
+            "stoneable":
+             {"name": "OpenX",
+              "permalink": "openx"}},
+           {"id": 26727,
+            "description": "Announced hire of Chief Legal Officer, Douglas McPherson",
+            "stoned_year": 2012,
+            "stoned_month": 9,
+            "stoned_day": 26,
+            "source_url": "http://openx.com/content/openx-appoints-douglas-mcpherson-chief-legal-officer",
+            "source_text": null,
+            "source_description": "Press Release: OpenX Appoints Douglas McPherson as Chief Legal Officer",
+            "stoneable_type": "Company",
+            "stoned_value": null,
+            "stoned_value_type": null,
+            "stoned_acquirer": null,
+            "stoneable":
+             {"name": "OpenX",
+              "permalink": "openx"}},
+           {"id": 30674,
+            "description": "OpenX Software Raises Additional Tranche in Series E Round",
+            "stoned_year": 2013,
+            "stoned_month": 2,
+            "stoned_day": 26,
+            "source_url": "http://www.finsmes.com/2013/02/openx-software-raises-additional-tranche-series.html",
+            "source_text": "",
+            "source_description": "OpenX Software Raises Additional Tranche in Series E Round",
+            "stoneable_type": "Company",
+            "stoned_value": null,
+            "stoned_value_type": null,
+            "stoned_acquirer": null,
+            "stoneable":
+             {"name": "OpenX",
+              "permalink": "openx"}}],
+         "ipo": null,
+         "video_embeds":
+          [{"embed_code": "\u003Cobject width=\"430\" height=\"242\"\u003E\u003Cparam name=\"movie\" value=\"http://www.youtube.com/v/Ync1J8-2yRY?version=3\u0026amp;hl=en_US\"\u003E\u003C/param\u003E\u003Cparam name=\"allowFullScreen\" value=\"true\"\u003E\u003C/param\u003E\u003Cparam name=\"allowscriptaccess\" value=\"always\"\u003E\u003C/param\u003E\u003Cembed src=\"http://www.youtube.com/v/Ync1J8-2yRY?version=3\u0026amp;hl=en_US\" type=\"application/x-shockwave-flash\" width=\"430\" height=\"242\" allowscriptaccess=\"always\" allowfullscreen=\"true\"\u003E\u003C/embed\u003E\u003C/object\u003E",
+            "description": "\u003Cp\u003EYield Optimization Redefined\u003C/p\u003E"},
+           {"embed_code": "\u003Cobject width=\"430\" height=\"242\"\u003E\u003Cparam name=\"movie\" value=\"http://www.youtube.com/v/t9idimze_7I?version=3\u0026amp;hl=en_US\"\u003E\u003C/param\u003E\u003Cparam name=\"allowFullScreen\" value=\"true\"\u003E\u003C/param\u003E\u003Cparam name=\"allowscriptaccess\" value=\"always\"\u003E\u003C/param\u003E\u003Cembed src=\"http://www.youtube.com/v/t9idimze_7I?version=3\u0026amp;hl=en_US\" type=\"application/x-shockwave-flash\" width=\"430\" height=\"242\" allowscriptaccess=\"always\" allowfullscreen=\"true\"\u003E\u003C/embed\u003E\u003C/object\u003E",
+            "description": "\u003Cp\u003EThe Trouble with Ad Exchanges\u003C/p\u003E"},
+           {"embed_code": "\u003Cobject width=\"430\" height=\"242\"\u003E\u003Cparam name=\"movie\" value=\"http://www.youtube.com/v/tVr_K9wguM0?version=3\u0026amp;hl=en_US\"\u003E\u003C/param\u003E\u003Cparam name=\"allowFullScreen\" value=\"true\"\u003E\u003C/param\u003E\u003Cparam name=\"allowscriptaccess\" value=\"always\"\u003E\u003C/param\u003E\u003Cembed src=\"http://www.youtube.com/v/tVr_K9wguM0?version=3\u0026amp;hl=en_US\" type=\"application/x-shockwave-flash\" width=\"430\" height=\"242\" allowscriptaccess=\"always\" allowfullscreen=\"true\"\u003E\u003C/embed\u003E\u003C/object\u003E",
+            "description": "\u003Cp\u003EThe Trouble With Ad Serving Today\u003C/p\u003E"},
+           {"embed_code": "\u003Cobject width=\"430\" height=\"242\"\u003E\u003Cparam name=\"movie\" value=\"http://www.youtube.com/v/j1Fm6qg4OsY?version=3\u0026amp;hl=en_US\"\u003E\u003C/param\u003E\u003Cparam name=\"allowFullScreen\" value=\"true\"\u003E\u003C/param\u003E\u003Cparam name=\"allowscriptaccess\" value=\"always\"\u003E\u003C/param\u003E\u003Cembed src=\"http://www.youtube.com/v/j1Fm6qg4OsY?version=3\u0026amp;hl=en_US\" type=\"application/x-shockwave-flash\" width=\"430\" height=\"242\" allowscriptaccess=\"always\" allowfullscreen=\"true\"\u003E\u003C/embed\u003E\u003C/object\u003E",
+            "description": "\u003Cp\u003EThe Power of Revenue Serving\u003C/p\u003E"}],
+         "screenshots":
+          [],
+         "external_links":
+          [{"external_url": "http://www.linkedin.com/company/openx",
+            "title": "LinkedIn"},
+           {"external_url": "https://twitter.com/OpenX",
+            "title": "Twitter"},
+           {"external_url": "https://www.facebook.com/OpenX",
+            "title": "Facebook"}],
+         "partners":
+          []}
+    http_version: 
+  recorded_at: Thu, 06 Feb 2014 13:22:27 GMT
+- request:
+    method: get
+    uri: http://api.crunchbase.com/v/1/company/openx.js?api_key=an35bya6x7ktkm5z7q3q6dvg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.crunchbase.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Date:
+      - Thu, 06 Feb 2014 13:22:27 GMT
+      Etag:
+      - '"c72a74fa8aedf04148cdc896d3056182"'
+      Server:
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+      Status:
+      - 200 OK
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1c-17.mashery.com
+      X-Powered-By:
+      - ''
+      X-Runtime:
+      - '0.00841'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {"name": "OpenX",
+         "permalink": "openx",
+         "crunchbase_url": "http://www.crunchbase.com/company/openx",
+         "homepage_url": "http://www.openx.com",
+         "blog_url": "http://www.openx.com/blog",
+         "blog_feed_url": "",
+         "twitter_username": "OpenX",
+         "category_code": "advertising",
+         "number_of_employees": 310,
+         "founded_year": 2008,
+         "founded_month": 5,
+         "founded_day": 1,
+         "deadpooled_year": null,
+         "deadpooled_month": null,
+         "deadpooled_day": null,
+         "deadpooled_url": null,
+         "tag_list": "ad-server, ad-serving, ad-exchange, yield-optimization, content-valuation",
+         "alias_list": "",
+         "email_address": "hello@openx.com",
+         "phone_number": "626-466-1141",
+         "description": "OpenX",
+         "created_at": "Wed Jun 13 18:23:43 UTC 2007",
+         "updated_at": "Fri Jan 31 09:36:40 UTC 2014",
+         "overview": "\u003Cp\u003EOpenX is a global leader in digital and mobile advertising technology. OpenX\u2019s vision is to unleash the full economic potential of digital media companies. OpenX\u2019s unified monetization platform combines an ad server and a real-time bidding ad exchange to deliver the highest revenue across every digitally connected screen.\u003C/p\u003E\n\n\u003Cp\u003EOpenX Technologies, Inc., a wholly owned subsidiary of OpenX Software Ltd., is based in Los Angeles and is backed by leading investors including Accel Partners, Index Ventures, SAP Ventures, and Samsung Venture Investment Corporation.\u003C/p\u003E",
+         "image":
+          {"available_sizes":
+            [[[150,
+               55],
+              "assets/images/resized/0000/4165/4165v11-max-150x150.png"],
+             [[250,
+               92],
+              "assets/images/resized/0000/4165/4165v11-max-250x250.png"],
+             [[450,
+               165],
+              "assets/images/resized/0000/4165/4165v11-max-450x450.png"]],
+           "attribution": null},
+         "products":
+          [{"name": "OpenX Ad Server",
+            "permalink": "openads"},
+           {"name": "OpenX Ad Exchange",
+            "permalink": "openx-hosted"},
+           {"name": "OpenX SSP",
+            "permalink": "openx-mods"}],
+         "relationships":
+          [{"is_past": false,
+            "title": "VP, Engineering \u0026 Chief Architect",
+            "person":
+             {"first_name": "Jin",
+              "last_name": "Yu",
+              "permalink": "jin-yu"}},
+           {"is_past": false,
+            "title": "Chief Operating Officer \u0026 President",
+            "person":
+             {"first_name": "John",
+              "last_name": "Gentry",
+              "permalink": "john-gentry-2"}},
+           {"is_past": false,
+            "title": "Chief Executive Officer",
+            "person":
+             {"first_name": "Tim",
+              "last_name": "Cadogan",
+              "permalink": "tim-cadogan"}},
+           {"is_past": false,
+            "title": "SVP \u0026 Chief Legal Officer",
+            "person":
+             {"first_name": "Douglas",
+              "last_name": "McPherson",
+              "permalink": "douglas-mcpherson"}},
+           {"is_past": false,
+            "title": "SVP \u0026 Chief Revenue Officer",
+            "person":
+             {"first_name": "Jason",
+              "last_name": "Fairchild",
+              "permalink": "jason-fairchild"}},
+           {"is_past": false,
+            "title": "VP, Monetization Product",
+            "person":
+             {"first_name": "Jason",
+              "last_name": "Ramsey",
+              "permalink": "jason-ramsey"}},
+           {"is_past": false,
+            "title": "VP, National Publisher Business Development",
+            "person":
+             {"first_name": "Trevor",
+              "last_name": "Thomas",
+              "permalink": "trevor-thomas"}},
+           {"is_past": false,
+            "title": "VP, Corporate Development",
+            "person":
+             {"first_name": "Roger",
+              "last_name": "Corn",
+              "permalink": "roger-corn"}},
+           {"is_past": false,
+            "title": "VP, Engineering",
+            "person":
+             {"first_name": "Michael",
+              "last_name": "Todd",
+              "permalink": "michael-todd"}},
+           {"is_past": false,
+            "title": "SVP, Products",
+            "person":
+             {"first_name": "Nicholas",
+              "last_name": "Cumins",
+              "permalink": "nicholas-cumins"}},
+           {"is_past": false,
+            "title": "SVP, Monetization Platform",
+            "person":
+             {"first_name": "Qasim",
+              "last_name": "Saifee",
+              "permalink": "qasim-saifee"}},
+           {"is_past": false,
+            "title": "Chair, Board of Directors",
+            "person":
+             {"first_name": "Jonathan",
+              "last_name": "Miller",
+              "permalink": "jonathan-miller"}},
+           {"is_past": false,
+            "title": "Head of Communications",
+            "person":
+             {"first_name": "Al",
+              "last_name": "Duncan",
+              "permalink": "al-duncan"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Bernard",
+              "last_name": "Dall\u00e9",
+              "permalink": "bernard-dall"}},
+           {"is_past": false,
+            "title": "GM, Advertising Solutions",
+            "person":
+             {"first_name": "Paul",
+              "last_name": "Sternhell",
+              "permalink": "paul-sternhell"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Nino",
+              "last_name": "Marakovic",
+              "permalink": "nino-marakovic"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Damon",
+              "last_name": "Reeve",
+              "permalink": "damon-reeve"}},
+           {"is_past": false,
+            "title": "SVP, Engineering",
+            "person":
+             {"first_name": "Manoj",
+              "last_name": "Goyal",
+              "permalink": "manoj-goyal"}},
+           {"is_past": false,
+            "title": "VP, Marketing",
+            "person":
+             {"first_name": "Matt",
+              "last_name": "Reid",
+              "permalink": "matt-reid"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Howard",
+              "last_name": "Hochhauser",
+              "permalink": "howard-hochhauser"}},
+           {"is_past": false,
+            "title": "Regional Director, DACH",
+            "person":
+             {"first_name": "Dimo",
+              "last_name": "Velev",
+              "permalink": "dimo-velev"}},
+           {"is_past": false,
+            "title": "GM, Publisher Business Development - East",
+            "person":
+             {"first_name": "Teri",
+              "last_name": "Gallo",
+              "permalink": "teri-gallo"}},
+           {"is_past": false,
+            "title": "Duplicate",
+            "person":
+             {"first_name": "Jon",
+              "last_name": "Fox",
+              "permalink": "jon-fox-7"}},
+           {"is_past": false,
+            "title": "Chief Financial Officer",
+            "person":
+             {"first_name": "Rick",
+              "last_name": "Gombos",
+              "permalink": "rick-gombos"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Andrew",
+              "last_name": "Braccia",
+              "permalink": "andrew-braccia"}},
+           {"is_past": false,
+            "title": "Board of Advisors",
+            "person":
+             {"first_name": "John",
+              "last_name": "Linden",
+              "permalink": "john-linden"}},
+           {"is_past": false,
+            "title": "Managing Director, Japan",
+            "person":
+             {"first_name": "Nick",
+              "last_name": "Kovac",
+              "permalink": "nick-kovac"}},
+           {"is_past": false,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Nicholas",
+              "last_name": "K. Pianim",
+              "permalink": "nicholas-k-pianim"}},
+           {"is_past": false,
+            "title": "Advisor",
+            "person":
+             {"first_name": "Qayed",
+              "last_name": "Shareef",
+              "permalink": "qayed-shareef"}},
+           {"is_past": false,
+            "title": "Professional Services \u0026 Support",
+            "person":
+             {"first_name": "Arlen",
+              "last_name": "Coupland",
+              "permalink": "arlen-coupland"}},
+           {"is_past": false,
+            "title": "Advisor",
+            "person":
+             {"first_name": "Anke",
+              "last_name": "Audenaert",
+              "permalink": "anke-audenaert"}},
+           {"is_past": false,
+            "title": "Director of Mobile",
+            "person":
+             {"first_name": "Jonathan",
+              "last_name": "Myron",
+              "permalink": "jonathan-myron"}},
+           {"is_past": false,
+            "title": "Sr. Director, Mobile Product",
+            "person":
+             {"first_name": "Martin",
+              "last_name": "Price",
+              "permalink": "martin-price"}},
+           {"is_past": false,
+            "title": "User Experience Lead",
+            "person":
+             {"first_name": "Jon",
+              "last_name": "Fox",
+              "permalink": "jon-fox-6"}},
+           {"is_past": false,
+            "title": "Managing Director, EMEA",
+            "person":
+             {"first_name": "Cameran",
+              "last_name": "Harman",
+              "permalink": "cameran-harman"}},
+           {"is_past": true,
+            "title": "Co-founder",
+            "person":
+             {"first_name": "Scott",
+              "last_name": "Switzer",
+              "permalink": "scott-switzer"}},
+           {"is_past": true,
+            "title": "CEO",
+            "person":
+             {"first_name": "James",
+              "last_name": "Bilefield",
+              "permalink": "james-bilefield"}},
+           {"is_past": true,
+            "title": "Founder, Board Member",
+            "person":
+             {"first_name": "Scott",
+              "last_name": "Switzer",
+              "permalink": "scott-switzer"}},
+           {"is_past": true,
+            "title": "CTO",
+            "person":
+             {"first_name": "John",
+              "last_name": "Linden",
+              "permalink": "john-linden"}},
+           {"is_past": true,
+            "title": "SVP, Strategy and Business Development",
+            "person":
+             {"first_name": "Elizabeth",
+              "last_name": "Osder",
+              "permalink": "elizabeth-osder"}},
+           {"is_past": true,
+            "title": "VP, Product Management",
+            "person":
+             {"first_name": "Matt",
+              "last_name": "Plummer",
+              "permalink": "matt-plummer"}},
+           {"is_past": true,
+            "title": "Publisher Solutions VP",
+            "person":
+             {"first_name": "Ajitpal",
+              "last_name": "Pannu",
+              "permalink": "ajitpal-pannu"}},
+           {"is_past": true,
+            "title": "Director Engineering",
+            "person":
+             {"first_name": "Jennifer",
+              "last_name": "Langdon",
+              "permalink": "jennifer-langdon"}},
+           {"is_past": true,
+            "title": "Head of Engineering",
+            "person":
+             {"first_name": "Michael",
+              "last_name": "Lum",
+              "permalink": "michael-lum"}},
+           {"is_past": true,
+            "title": "Director of Communications",
+            "person":
+             {"first_name": "James",
+              "last_name": "Aldous",
+              "permalink": "james-aldous"}},
+           {"is_past": true,
+            "title": "General Manager, Publisher Business",
+            "person":
+             {"first_name": "Jason",
+              "last_name": "White",
+              "permalink": "jason-white-3"}},
+           {"is_past": true,
+            "title": "Duplicate",
+            "person":
+             {"first_name": "Jason",
+              "last_name": "Fairchild",
+              "permalink": "jason-fairchild"}},
+           {"is_past": true,
+            "title": "Mobile Consultant",
+            "person":
+             {"first_name": "Eli",
+              "last_name": "Calder\u00f3n Morin",
+              "permalink": "eli-caldern-morin"}},
+           {"is_past": true,
+            "title": "VP, Publisher Business Development",
+            "person":
+             {"first_name": "Sam",
+              "last_name": "Cox",
+              "permalink": "sam-cox"}},
+           {"is_past": true,
+            "title": "Advisor",
+            "person":
+             {"first_name": "Kent",
+              "last_name": "Wakeford",
+              "permalink": "kent-wakeford"}},
+           {"is_past": true,
+            "title": "Managing Director EMEA",
+            "person":
+             {"first_name": "Vincent",
+              "last_name": "Pelillo",
+              "permalink": "vincent-pelillo"}},
+           {"is_past": true,
+            "title": "Board Member",
+            "person":
+             {"first_name": "Saul",
+              "last_name": "Klein",
+              "permalink": "saul-klein"}},
+           {"is_past": true,
+            "title": "Managing Director, EMEA",
+            "person":
+             {"first_name": "Vincent",
+              "last_name": "Pelillo",
+              "permalink": "vincent-pelillo-2"}},
+           {"is_past": true,
+            "title": "GM, Publisher Team East/Enterprise",
+            "person":
+             {"first_name": "Eric",
+              "last_name": "Rosenthal",
+              "permalink": "eric-rosenthal-2"}},
+           {"is_past": true,
+            "title": "Managing Director, EMEA",
+            "person":
+             {"first_name": "Ken",
+              "last_name": "Parnham",
+              "permalink": "ken-parnham"}},
+           {"is_past": true,
+            "title": "Duplicate",
+            "person":
+             {"first_name": "Douglas",
+              "last_name": "McPherson",
+              "permalink": "douglas-mcpherson"}},
+           {"is_past": true,
+            "title": "Director Of Engineering",
+            "person":
+             {"first_name": "David",
+              "last_name": "Tannenbaum",
+              "permalink": "david-tannenbaum"}},
+           {"is_past": true,
+            "title": "Head of Worldwide Services",
+            "person":
+             {"first_name": "Joe",
+              "last_name": "Ayyoub",
+              "permalink": "joe-ayyoub"}},
+           {"is_past": true,
+            "title": "Director of User Experience",
+            "person":
+             {"first_name": "Charles",
+              "last_name": "Brewer",
+              "permalink": "charles-brewer"}},
+           {"is_past": true,
+            "title": "Senior Director, Publisher Business",
+            "person":
+             {"first_name": "Sal",
+              "last_name": "Leone",
+              "permalink": "sal-leone"}}],
+         "competitions":
+          [{"competitor":
+             {"name": "DoubleClick",
+              "permalink": "doubleclick"}},
+           {"competitor":
+             {"name": "Rubicon Project",
+              "permalink": "rubiconproject"}},
+           {"competitor":
+             {"name": "PubMatic",
+              "permalink": "pubmatic"}}],
+         "providerships":
+          [],
+         "total_money_raised": "$75.5M",
+         "funding_rounds":
+          [{"id": 31,
+            "round_code": "a",
+            "source_url": "http://www.techcrunch.com/2007/06/13/openads-opensource-project-raises-5-million/",
+            "source_description": "",
+            "raised_amount": 5000000.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2007,
+            "funded_month": 6,
+            "funded_day": 1,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "First Round Capital",
+                 "permalink": "first-round-capital"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Index Ventures",
+                 "permalink": "index-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mangrove Capital Partners",
+                 "permalink": "mangrove-capital-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "O'Reilly AlphaTech Ventures",
+                 "permalink": "o-reilly-alphatech-ventures"},
+               "person": null}]},
+           {"id": 1401,
+            "round_code": "b",
+            "source_url": "http://www.thealarmclock.com/mt/archives/2008/01/openads_raises.html",
+            "source_description": "",
+            "raised_amount": 15500000.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2008,
+            "funded_month": 1,
+            "funded_day": 1,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "Accel Partners",
+                 "permalink": "accel-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "First Round Capital",
+                 "permalink": "first-round-capital"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Index Ventures",
+                 "permalink": "index-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mangrove Capital Partners",
+                 "permalink": "mangrove-capital-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "O'Reilly AlphaTech Ventures",
+                 "permalink": "o-reilly-alphatech-ventures"},
+               "person": null}]},
+           {"id": 6129,
+            "round_code": "c",
+            "source_url": "http://www.techcrunch.com/2009/05/26/openx-keeps-on-growing-raises-10-million-more/",
+            "source_description": "OpenX Keeps On Growing, Raises $10 Million More",
+            "raised_amount": 10000000.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2009,
+            "funded_month": 5,
+            "funded_day": 26,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "DAG Ventures",
+                 "permalink": "dag-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Accel Partners",
+                 "permalink": "accel-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Index Ventures",
+                 "permalink": "index-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mangrove Capital Partners",
+                 "permalink": "mangrove-capital-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "First Round Capital",
+                 "permalink": "first-round-capital"},
+               "person": null},
+              {"company": null,
+               "financial_org": null,
+               "person":
+                {"first_name": "Jonathan",
+                 "last_name": "Miller",
+                 "permalink": "jonathan-miller"}}]},
+           {"id": 23286,
+            "round_code": "d",
+            "source_url": "http://techcrunch.com/2011/05/31/openx-secures-20-million-in-series-d-funding-to-fuel-growth-acquisitions/",
+            "source_description": "OpenX Secures $20 Million In Series D Funding To Fuel Growth, Acquisitions",
+            "raised_amount": 20000000.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2011,
+            "funded_month": 5,
+            "funded_day": 31,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "SAP Ventures",
+                 "permalink": "sap-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "AOL Ventures",
+                 "permalink": "aol-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Presidio Ventures",
+                 "permalink": "presidio-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mitsui Global Investment",
+                 "permalink": "mitsui-global-investment"},
+               "person": null}]},
+           {"id": 34869,
+            "round_code": "e",
+            "source_url": "http://www.sec.gov/Archives/edgar/data/1520718/000152071813000003/xslFormDX01/primary_doc.xml",
+            "source_description": "OpenX Raises $25 Million in Round Led by Samsung Venture Unit",
+            "raised_amount": 25011200.0,
+            "raised_currency_code": "USD",
+            "funded_year": 2013,
+            "funded_month": 1,
+            "funded_day": 17,
+            "investments":
+             [{"company": null,
+               "financial_org":
+                {"name": "Samsung Ventures",
+                 "permalink": "samsung-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Accel Partners",
+                 "permalink": "accel-partners"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Index Ventures",
+                 "permalink": "index-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "SAP Ventures",
+                 "permalink": "sap-ventures"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Mitsui Global Investment",
+                 "permalink": "mitsui-global-investment"},
+               "person": null},
+              {"company": null,
+               "financial_org":
+                {"name": "Presidio Ventures",
+                 "permalink": "presidio-ventures"},
+               "person": null},
+              {"company":
+                {"name": "Cyber Communications",
+                 "permalink": "cyber-communications"},
+               "financial_org": null,
+               "person": null}]}],
+         "investments":
+          [],
+         "acquisition": null,
+         "acquisitions":
+          [{"price_amount": null,
+            "price_currency_code": "USD",
+            "term_code": null,
+            "source_url": "http://mediadecoder.blogs.nytimes.com/2012/10/28/openx-acquires-jumptime/",
+            "source_description": "OpenX acquires JumpTime",
+            "acquired_year": 2012,
+            "acquired_month": 10,
+            "acquired_day": 29,
+            "company":
+             {"name": "JumpTime",
+              "permalink": "jumptime"}},
+           {"price_amount": null,
+            "price_currency_code": "USD",
+            "term_code": null,
+            "source_url": "http://techcrunch.com/2012/02/27/openx-acquires-supply-side-platform-liftdna/",
+            "source_description": "TechCrunch",
+            "acquired_year": 2012,
+            "acquired_month": 2,
+            "acquired_day": 27,
+            "company":
+             {"name": "LiftDNA",
+              "permalink": "liftdna"}}],
+         "offices":
+          [{"description": "Headquarters",
+            "address1": "888 East Walnut Street",
+            "address2": "",
+            "zip_code": "91101",
+            "city": "Pasadena",
+            "state_code": "CA",
+            "country_code": "USA",
+            "latitude": 34.1494713,
+            "longitude": -118.1327468},
+           {"description": "New York",
+            "address1": "584 Broadway",
+            "address2": "8th Floor",
+            "zip_code": "10012",
+            "city": "New York",
+            "state_code": "NY",
+            "country_code": "USA",
+            "latitude": null,
+            "longitude": null},
+           {"description": "London",
+            "address1": "1 Maple Place",
+            "address2": "",
+            "zip_code": "W1T 4BB",
+            "city": "London",
+            "state_code": null,
+            "country_code": "GBR",
+            "latitude": null,
+            "longitude": null},
+           {"description": "Tokyo",
+            "address1": "4-12-25 Minami-Azabu",
+            "address2": "Minato-ku",
+            "zip_code": "1060047",
+            "city": "Tokyo",
+            "state_code": null,
+            "country_code": "JPN",
+            "latitude": null,
+            "longitude": null},
+           {"description": "Munich",
+            "address1": "Maximilianstrasse 35a",
+            "address2": "",
+            "zip_code": "80539",
+            "city": "Munich",
+            "state_code": null,
+            "country_code": "DEU",
+            "latitude": null,
+            "longitude": null}],
+         "milestones":
+          [{"id": 21834,
+            "description": "Acquisition of SSP LiftDNA",
+            "stoned_year": 2012,
+            "stoned_month": 2,
+            "stoned_day": 27,
+            "source_url": "http://openx.com/content/openx-acquires-breakthrough-supply-side-platform-liftdna",
+            "source_text": null,
+            "source_description": "Press Release",
+            "stoneable_type": "Company",
+            "stoned_value": null,
+            "stoned_value_type": null,
+            "stoned_acquirer": null,
+            "stoneable":
+             {"name": "OpenX",
+              "permalink": "openx"}},
+           {"id": 26727,
+            "description": "Announced hire of Chief Legal Officer, Douglas McPherson",
+            "stoned_year": 2012,
+            "stoned_month": 9,
+            "stoned_day": 26,
+            "source_url": "http://openx.com/content/openx-appoints-douglas-mcpherson-chief-legal-officer",
+            "source_text": null,
+            "source_description": "Press Release: OpenX Appoints Douglas McPherson as Chief Legal Officer",
+            "stoneable_type": "Company",
+            "stoned_value": null,
+            "stoned_value_type": null,
+            "stoned_acquirer": null,
+            "stoneable":
+             {"name": "OpenX",
+              "permalink": "openx"}},
+           {"id": 30674,
+            "description": "OpenX Software Raises Additional Tranche in Series E Round",
+            "stoned_year": 2013,
+            "stoned_month": 2,
+            "stoned_day": 26,
+            "source_url": "http://www.finsmes.com/2013/02/openx-software-raises-additional-tranche-series.html",
+            "source_text": "",
+            "source_description": "OpenX Software Raises Additional Tranche in Series E Round",
+            "stoneable_type": "Company",
+            "stoned_value": null,
+            "stoned_value_type": null,
+            "stoned_acquirer": null,
+            "stoneable":
+             {"name": "OpenX",
+              "permalink": "openx"}}],
+         "ipo": null,
+         "video_embeds":
+          [{"embed_code": "\u003Cobject width=\"430\" height=\"242\"\u003E\u003Cparam name=\"movie\" value=\"http://www.youtube.com/v/Ync1J8-2yRY?version=3\u0026amp;hl=en_US\"\u003E\u003C/param\u003E\u003Cparam name=\"allowFullScreen\" value=\"true\"\u003E\u003C/param\u003E\u003Cparam name=\"allowscriptaccess\" value=\"always\"\u003E\u003C/param\u003E\u003Cembed src=\"http://www.youtube.com/v/Ync1J8-2yRY?version=3\u0026amp;hl=en_US\" type=\"application/x-shockwave-flash\" width=\"430\" height=\"242\" allowscriptaccess=\"always\" allowfullscreen=\"true\"\u003E\u003C/embed\u003E\u003C/object\u003E",
+            "description": "\u003Cp\u003EYield Optimization Redefined\u003C/p\u003E"},
+           {"embed_code": "\u003Cobject width=\"430\" height=\"242\"\u003E\u003Cparam name=\"movie\" value=\"http://www.youtube.com/v/t9idimze_7I?version=3\u0026amp;hl=en_US\"\u003E\u003C/param\u003E\u003Cparam name=\"allowFullScreen\" value=\"true\"\u003E\u003C/param\u003E\u003Cparam name=\"allowscriptaccess\" value=\"always\"\u003E\u003C/param\u003E\u003Cembed src=\"http://www.youtube.com/v/t9idimze_7I?version=3\u0026amp;hl=en_US\" type=\"application/x-shockwave-flash\" width=\"430\" height=\"242\" allowscriptaccess=\"always\" allowfullscreen=\"true\"\u003E\u003C/embed\u003E\u003C/object\u003E",
+            "description": "\u003Cp\u003EThe Trouble with Ad Exchanges\u003C/p\u003E"},
+           {"embed_code": "\u003Cobject width=\"430\" height=\"242\"\u003E\u003Cparam name=\"movie\" value=\"http://www.youtube.com/v/tVr_K9wguM0?version=3\u0026amp;hl=en_US\"\u003E\u003C/param\u003E\u003Cparam name=\"allowFullScreen\" value=\"true\"\u003E\u003C/param\u003E\u003Cparam name=\"allowscriptaccess\" value=\"always\"\u003E\u003C/param\u003E\u003Cembed src=\"http://www.youtube.com/v/tVr_K9wguM0?version=3\u0026amp;hl=en_US\" type=\"application/x-shockwave-flash\" width=\"430\" height=\"242\" allowscriptaccess=\"always\" allowfullscreen=\"true\"\u003E\u003C/embed\u003E\u003C/object\u003E",
+            "description": "\u003Cp\u003EThe Trouble With Ad Serving Today\u003C/p\u003E"},
+           {"embed_code": "\u003Cobject width=\"430\" height=\"242\"\u003E\u003Cparam name=\"movie\" value=\"http://www.youtube.com/v/j1Fm6qg4OsY?version=3\u0026amp;hl=en_US\"\u003E\u003C/param\u003E\u003Cparam name=\"allowFullScreen\" value=\"true\"\u003E\u003C/param\u003E\u003Cparam name=\"allowscriptaccess\" value=\"always\"\u003E\u003C/param\u003E\u003Cembed src=\"http://www.youtube.com/v/j1Fm6qg4OsY?version=3\u0026amp;hl=en_US\" type=\"application/x-shockwave-flash\" width=\"430\" height=\"242\" allowscriptaccess=\"always\" allowfullscreen=\"true\"\u003E\u003C/embed\u003E\u003C/object\u003E",
+            "description": "\u003Cp\u003EThe Power of Revenue Serving\u003C/p\u003E"}],
+         "screenshots":
+          [],
+         "external_links":
+          [{"external_url": "http://www.linkedin.com/company/openx",
+            "title": "LinkedIn"},
+           {"external_url": "https://twitter.com/OpenX",
+            "title": "Twitter"},
+           {"external_url": "https://www.facebook.com/OpenX",
+            "title": "Facebook"}],
+         "partners":
+          []}
+    http_version: 
+  recorded_at: Thu, 06 Feb 2014 13:22:27 GMT
+recorded_with: VCR 2.8.0

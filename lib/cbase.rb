@@ -1,3 +1,4 @@
-require "cbase/version"
-require "cbase/client"
-require "cbase/index_parser"
+require_relative "version"
+require_relative "company_list"
+require_relative "csv_file"
+require_relative "ny_companies"
