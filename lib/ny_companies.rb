@@ -39,7 +39,7 @@ class NYCompanies
       comp[:job2] = top2["title"]
       comp[:job3] = top3["title"]
     rescue StandardError => e
-      $stderr.puts permalink
+      $stderr.puts company["permalink"]
       $stderr.puts e.message
       $stderr.puts e.backtrace.inspect
     end
