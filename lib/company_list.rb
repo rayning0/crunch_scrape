@@ -11,9 +11,4 @@ class CompanyList
   private
   API_KEY = "an35bya6x7ktkm5z7q3q6dvg"
   COMPANIES_URL = "http://api.crunchbase.com/v/1/companies.js?api_key=#{API_KEY}"
-  end
-
-# ONLY RUN IN THE TESTS!!!
-# permalinks = CompanyList.new.get_company_permalinks
-# nycompanies = NYCompanies.new(permalinks).get_ny_companies
-# puts CsvFile.new(nycompanies).to_csv
+end

@@ -2,56 +2,8 @@ class NYCompanies
   def get_ny_companies(permalinks)
     permalinks.map {|permalink|
       company = company_hash(permalink) 
-      company if in_ny?(company)
+      csv_hash(company) if in_ny?(company)
     }.compact
-  end
-# #4. If company office is in New York, record its data
-
-#           top1, top2, top3 = comp["relationships"][0..2]  # top 3 people 
-#           if top1.nil?
-#             top1_fname, top1_lname, top1_title = nil, nil, nil 
-#           else
-#             top1_fname = top1["person"]["first_name"]
-#             top1_lname = top1["person"]["last_name"]
-#             top1_title = top1["title"]
-#           end
-#           if top2.nil?
-#             top2_fname, top2_lname, top2_title = nil, nil, nil 
-#           else
-#             top2_fname = top2["person"]["first_name"]
-#             top2_lname = top2["person"]["last_name"]
-#             top2_title = top2["title"]
-#           end
-#           if top3.nil?
-#             top3_fname, top3_lname, top3_title = nil, nil, nil 
-#           else
-#             top3_fname = top3["person"]["first_name"]
-#             top3_lname = top3["person"]["last_name"]
-#             top3_title = top3["title"]
-#           end
-
-# #5. For this NY company, add its data to CSV file
-#           csv << [comp["name"], "=HYPERLINK(\"#{comp["homepage_url"]}\")", comp["phone_number"], 
-
-#             "=HYPERLINK(\"https://www.google.com/maps/preview/place/'" + "#{office["address1"]} #{office["address2"]}" + " New York'\")", comp["email_address"], 
-
-#             "=HYPERLINK(\"https://www.google.com/search?q='management+team'+#{permalink}\")", 
-
-#             "#{top1_fname} #{top1_lname}", "#{top1_title}", 
-#             "#{top2_fname} #{top2_lname}", "#{top2_title}",
-#             "#{top3_fname} #{top3_lname}", "#{top3_title}"]
-#         rescue StandardError => e
-#           $stderr.puts "#{permalink} and office = #{office}"
-#           $stderr.puts e.message
-#           $stderr.puts e.backtrace.inspect
-#         end
-#       end
-#     end
-    
-#
-  
-
-  def to_csv
   end
 
   def company_hash(permalink)
@@ -67,7 +19,40 @@ class NYCompanies
     comp_hash
   end 
 
-  private
+  def csv_hash(company)
+    comp = {}
+    comp[:name] = company["name"]
+    begin
+      comp[:url] = "=HYPERLINK(\"#{company["homepage_url"]}\")"
+      comp[:phone] = company["phone_number"]
+
+      comp[:address] = get_ny_address(company["offices"])
+
+      comp[:email] = company["email_address"]
+      comp[:mgmt_team] = "=HYPERLINK(\"https://www.google.com/search?q='management+team'+#{company["permalink"]}\")"
+      top1, top2, top3 = company["relationships"][0..2]
+
+      comp[:person1] = "#{top1["person"]["first_name"]} #{top1["person"]["last_name"]}"
+      comp[:person2] = "#{top2["person"]["first_name"]} #{top2["person"]["last_name"]}"
+      comp[:person3] = "#{top3["person"]["first_name"]} #{top3["person"]["last_name"]}" 
+      comp[:job1] = top1["title"]
+      comp[:job2] = top2["title"]
+      comp[:job3] = top3["title"]
+    rescue StandardError => e
+      $stderr.puts permalink
+      $stderr.puts e.message
+      $stderr.puts e.backtrace.inspect
+    end
+    comp
+  end
+
+  def get_ny_address(offices)
+    offices.map { |office|
+      if office["city"] == "New York"
+        "=HYPERLINK(\"https://www.google.com/maps/preview/place/'#{office["address1"]} #{office["address2"]} New York'\")"  
+      end
+    }.compact.first
+  end
 
   def in_ny?(company)
     company["offices"].each do |office|

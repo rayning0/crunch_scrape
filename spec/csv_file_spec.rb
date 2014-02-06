@@ -18,9 +18,9 @@ describe CsvFile do
 
   describe "#to_csv" do
     it "adds CSV information for only NY companies to file" do
-      @csvfile.to_csv(nycompanies)
-      CSV.foreach(PATH) do |row|
-        expect(row[3].include?("New York")).to eq(true)
+      #@csvfile.to_csv(nycompanies)
+      CSV.foreach(PATH, {:headers=>:first_row}) do |row|
+        expect(row.include?("New York")).to eq(true)
       end
     end
   end

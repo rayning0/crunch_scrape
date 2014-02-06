@@ -12,7 +12,7 @@ describe NYCompanies do
 
       Net::HTTP.stub(:get_response).and_return(company)
       ny_companies = @companies.get_ny_companies(['viacom'])
-      expect(ny_companies).to eq([JSON.parse(company.body)])
+      expect(ny_companies).to eq([@companies.csv_hash(JSON.parse(company.body))])
     end
 
     it "doesn't return McDonald's, since it's NOT in New York" do
