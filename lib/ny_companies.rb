@@ -22,28 +22,29 @@ class NYCompanies
   def csv_hash(company)
     comp = {}
     comp[:name] = company["name"]
-    begin
-      comp[:url] = "=HYPERLINK(\"#{company["homepage_url"]}\")"
-      comp[:phone] = company["phone_number"]
+    comp[:url] = "=HYPERLINK(\"#{company["homepage_url"]}\")"
+    comp[:phone] = company["phone_number"]
+    comp[:address] = get_ny_address(company["offices"])
+    comp[:email] = company["email_address"]
+    comp[:mgmt_team] = "=HYPERLINK(\"https://www.google.com/search?q='management+team'+#{company["permalink"]}\")"
 
-      comp[:address] = get_ny_address(company["offices"])
-
-      comp[:email] = company["email_address"]
-      comp[:mgmt_team] = "=HYPERLINK(\"https://www.google.com/search?q='management+team'+#{company["permalink"]}\")"
-      top1, top2, top3 = company["relationships"][0..2]
-
-      comp[:person1] = "#{top1["person"]["first_name"]} #{top1["person"]["last_name"]}"
-      comp[:person2] = "#{top2["person"]["first_name"]} #{top2["person"]["last_name"]}"
-      comp[:person3] = "#{top3["person"]["first_name"]} #{top3["person"]["last_name"]}" 
-      comp[:job1] = top1["title"]
-      comp[:job2] = top2["title"]
-      comp[:job3] = top3["title"]
-    rescue StandardError => e
-      $stderr.puts company["permalink"]
-      $stderr.puts e.message
-      $stderr.puts e.backtrace.inspect
+    top = []
+    (0..2).each do |i|
+      top[i] = company["relationships"][i].nil? ? no_person : company["relationships"][i]
     end
+
+    comp[:person0] = "#{top[0]["person"]["first_name"]} #{top[0]["person"]["last_name"]}"
+    comp[:person1] = "#{top[1]["person"]["first_name"]} #{top[1]["person"]["last_name"]}"
+    comp[:person2] = "#{top[2]["person"]["first_name"]} #{top[2]["person"]["last_name"]}" 
+
+    comp[:job0] = top[0]["title"]
+    comp[:job1] = top[1]["title"]
+    comp[:job2] = top[2]["title"]
     comp
+  end
+
+  def no_person
+    {"title" => nil, "person" => {"first_name" => nil, "last_name" => nil}}
   end
 
   def get_ny_address(offices)
