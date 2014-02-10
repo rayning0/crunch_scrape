@@ -83,8 +83,8 @@ describe NYCompanies do
                    "phone_number"=>"",
                    "relationships"=>[{"title"=>"Director",
                                       "person"=>
-                                       {"first_name"=>"Susan",
-                                        "last_name"=>"Arnold"}}],
+                                      {"first_name"=>"Susan",
+                                       "last_name"=>"Arnold"}}],
                    "offices"=>
                     [{"address1"=>"",
                       "address2"=>"",

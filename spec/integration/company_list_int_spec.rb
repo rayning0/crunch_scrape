@@ -1,7 +1,6 @@
 require_relative "../spec_helper"
 
 describe CompanyList, vcr: true do
-  # integration test
   before do
     @client = CompanyList.new
   end

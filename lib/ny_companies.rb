@@ -1,4 +1,6 @@
 class NYCompanies
+  NO_PERSON = {"title" => nil, "person" => {"first_name" => nil, "last_name" => nil}}
+
   def get_ny_companies(permalinks)
     permalinks.map {|permalink|
       company = company_hash(permalink) 
@@ -10,7 +12,10 @@ class NYCompanies
     company_url = "http://api.crunchbase.com/v/1/company/#{permalink}.js?api_key=#{CompanyList::API_KEY}"
     begin
       response = Net::HTTP.get_response(URI(company_url))
-      comp_hash = JSON.parse(response.body)
+      
+      # Prevent JSON parse error ("unexpected token")
+      response = response.body.gsub(/(?<=\"overview\"\:)(.*)(?=\,\n\s\"image\"\:)/, "null")
+      comp_hash = JSON.parse(response)
     rescue StandardError => e
       $stderr.puts permalink
       $stderr.puts e.message
@@ -30,7 +35,7 @@ class NYCompanies
 
     top = []
     (0..2).each do |i|
-      top[i] = company["relationships"][i].nil? ? no_person : company["relationships"][i]
+      top[i] = company["relationships"][i].nil? ? NO_PERSON : company["relationships"][i]
     end
 
     comp[:person0] = "#{top[0]["person"]["first_name"]} #{top[0]["person"]["last_name"]}"
@@ -41,10 +46,6 @@ class NYCompanies
     comp[:job1] = top[1]["title"]
     comp[:job2] = top[2]["title"]
     comp
-  end
-
-  def no_person
-    {"title" => nil, "person" => {"first_name" => nil, "last_name" => nil}}
   end
 
   def get_ny_address(offices)

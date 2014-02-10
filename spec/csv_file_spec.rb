@@ -5,6 +5,9 @@ describe CsvFile do
     @csvfile = CsvFile.new
     HEADER = CsvFile::HEADER
     PATH = CsvFile::PATH
+    PERMALINKS = ['wetpaint', 'kmart', 'viacom', 'mcdonalds', 'facebook', 
+    'zwinky', 'headstrong-brain-gym', 'uncle-sams-new-york-llc', 'philo-media', 
+    'cargurus', 'emergingcast']
   end
 
   describe "#make_CSV_header" do
@@ -18,9 +21,10 @@ describe CsvFile do
 
   describe "#to_csv" do
     it "adds CSV information for only NY companies to file" do
-      #@csvfile.to_csv(nycompanies)
+      nycompanies = NYCompanies.new.get_ny_companies(PERMALINKS)
+      @csvfile.to_csv(nycompanies)
       CSV.foreach(PATH, {:headers=>:first_row}) do |row|
-        expect(row.include?("New York")).to eq(true)
+        expect(row.to_s.include?("New York")).to eq(true)
       end
     end
   end

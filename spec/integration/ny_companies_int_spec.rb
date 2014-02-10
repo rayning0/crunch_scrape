@@ -1,7 +1,6 @@
 require_relative "../spec_helper"
 
 describe NYCompanies, vcr: true do
-  # integration test
   before do
     @companies = NYCompanies.new
   end
@@ -17,4 +16,16 @@ describe NYCompanies, vcr: true do
       expect(ny_companies).to eq([])
     end
   end
+
+  describe "#get_ny_companies (integration test - avoids JSON parse error)" do
+    it "avoids JSON parse error ('unexpected token') with non-NY companies like CarGurus" do
+      ny_companies = @companies.get_ny_companies(['cargurus'])
+      expect(ny_companies).to eq([])      
+    end
+
+    it "avoids JSON parse error ('unexpected token') with NY companies like EmergingCast" do
+      ny_companies = @companies.get_ny_companies(['emergingcast'])
+      expect(ny_companies).to eq([@companies.csv_hash(@companies.company_hash('emergingcast'))])      
+    end   
+  end  
 end
