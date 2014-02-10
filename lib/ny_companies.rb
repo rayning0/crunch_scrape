@@ -10,19 +10,16 @@ class NYCompanies
 
   def company_hash(permalink)
     company_url = "http://api.crunchbase.com/v/1/company/#{permalink}.js?api_key=#{CompanyList::API_KEY}"
-    begin
-      response = Net::HTTP.get_response(URI(company_url))
-      
-      # Prevent JSON parse error ("unexpected token")
-      response = response.body.gsub(/(?<=\"overview\"\:)(.*)(?=\,\n\s\"image\"\:)/, "null")
-      comp_hash = JSON.parse(response)
-    rescue StandardError => e
-      $stderr.puts permalink
-      $stderr.puts e.message
-      $stderr.puts e.backtrace.inspect
-    end
-    comp_hash
+    response = Net::HTTP.get_response(URI(company_url))
+    
+    # Prevent JSON parse error ("unexpected token")
+    response = response.body.gsub(/(?<=\"overview\"\:)(.*)(?=\,\n\s\"image\"\:)/, "null")
+    comp_hash = JSON.parse(response)
+    comp_hash  
   end 
+
+def csv_hash
+end
 
   def csv_hash(company)
     comp = {}

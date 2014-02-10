@@ -5,7 +5,8 @@ class CompanyList
 
   def get_companies
     response = Net::HTTP.get_response(URI(COMPANIES_URL))
-    result = JSON.parse(response.body)   
+    # gsub takes care of JSON parse error in getting permalinks
+    result = JSON.parse(response.body.gsub("][", ",\n "))   
   end
 
   private
