@@ -18,9 +18,6 @@ class NYCompanies
     comp_hash  
   end 
 
-def csv_hash
-end
-
   def csv_hash(company)
     comp = {}
     comp[:name] = company["name"]

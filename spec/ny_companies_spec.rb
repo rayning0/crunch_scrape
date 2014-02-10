@@ -29,9 +29,7 @@ describe NYCompanies do
                    "offices"=>
                     [{"address1"=>"1515 Broadway",
                       "address2"=>"",
-                      "zip_code"=>"10036",
-                      "city"=>"New York",
-                      "state_code"=>"NY"}]}.to_json
+                      "city"=>"New York"}]}.to_json
 
       company.stub(body: comp_json)
       Net::HTTP.stub(:get_response).and_return(company)
@@ -63,9 +61,7 @@ describe NYCompanies do
                    "offices"=>
                     [{"address1"=>"2111 McDonald's Dr.",
                       "address2"=>"",
-                      "zip_code"=>"60523",
-                      "city"=>"Oak Brook",
-                      "state_code"=>"IL"}]}.to_json
+                      "city"=>"Oak Brook"}]}.to_json
 
       company.stub(body: comp_json)
       Net::HTTP.stub(:get_response).and_return(company)
@@ -88,8 +84,7 @@ describe NYCompanies do
                    "offices"=>
                     [{"address1"=>"",
                       "address2"=>"",
-                      "city"=>"New York",
-                      "state_code"=>""}]}.to_json
+                      "city"=>"New York"}]}.to_json
 
       company.stub(body: comp_json)
       Net::HTTP.stub(:get_response).and_return(company)
