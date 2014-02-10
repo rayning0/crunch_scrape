@@ -2,10 +2,11 @@ class NYCompanies
   NO_PERSON = {"title" => nil, "person" => {"first_name" => nil, "last_name" => nil}}
 
   def get_ny_companies(permalinks)
-    permalinks.map {|permalink|
-      company = company_hash(permalink) 
-      csv_hash(company) if in_ny?(company)
-    }.compact
+    # companies.select{ |c| c.in_ny? }.map { |c| c.csv_hash } 
+    permalinks.each_with_object([]) do |permalink, nyc|
+      company = company_hash(permalink)
+      nyc << csv_hash(company) if in_ny?(company)
+    end
   end
 
   def company_hash(permalink)
@@ -14,8 +15,7 @@ class NYCompanies
     
     # Prevent JSON parse error ("unexpected token")
     response = response.body.gsub(/(?<=\"overview\"\:)(.*)(?=\,\n\s\"image\"\:)/, "null")
-    comp_hash = JSON.parse(response)
-    comp_hash  
+    JSON.parse(response)
   end 
 
   def csv_hash(company)
@@ -43,17 +43,11 @@ class NYCompanies
   end
 
   def get_ny_address(offices)
-    offices.map { |office|
-      if office["city"] == "New York"
-        "=HYPERLINK(\"https://www.google.com/maps/preview/place/'#{office["address1"]} #{office["address2"]} New York'\")"  
-      end
-    }.compact.first
+    ny = offices.select {|office| office["city"] == "New York"}[0]
+    "#{ny["address1"]} #{ny["address2"]} New York"
   end
 
   def in_ny?(company)
-    company["offices"].each do |office|
-      return true if office["city"] == "New York"
-    end
-    false
+    company["offices"].map{|office| office["city"]}.include?("New York")
   end
 end
