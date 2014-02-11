@@ -5,7 +5,7 @@ class CompanyList
 
   def get_companies
     response = Net::HTTP.get_response(URI(COMPANIES_URL))
-    result = JSON.parse(response.body)
+    JSON.parse(response.body)
   end
 
   private

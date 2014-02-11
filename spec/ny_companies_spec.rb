@@ -1,13 +1,10 @@
 require 'spec_helper'
 
 describe NYCompanies do
-  before do
-    @companies = NYCompanies.new
-  end
+  let(:company) {double(:company)}
 
   describe "#get_ny_companies (unit test)" do
-    it "returns Viacom, since it's in New York" do
-      company = double(:company) 
+    it "returns Viacom, since it's in New York" do 
       comp_json = {"name"=>"Viacom",
                    "permalink"=>"viacom",
                    "homepage_url"=>"http://www.viacom.com",
@@ -33,13 +30,12 @@ describe NYCompanies do
 
       company.stub(body: comp_json)
       Net::HTTP.stub(:get_response).and_return(company)
-      ny_companies = @companies.get_ny_companies(['viacom'])
-
-      expect(ny_companies).to eq([@companies.csv_hash(JSON.parse(company.body))])
+      nycompanies = NYCompanies.new(['viacom']).get_ny_companies
+      company = Company.new('viacom')
+      expect(company).to eq(nycompanies[0])
     end
 
     it "doesn't return McDonald's, since it's NOT in New York" do
-      company = double(:company) 
       comp_json = {"name"=>"McDonald's",
                    "permalink"=>"mcdonalds",
                    "homepage_url"=>"http://www.mcdonalds.com",
@@ -65,13 +61,11 @@ describe NYCompanies do
 
       company.stub(body: comp_json)
       Net::HTTP.stub(:get_response).and_return(company)
-      ny_companies = @companies.get_ny_companies(['mcdonalds'])
-
-      expect(ny_companies).to eq([])
+      nycompanies = NYCompanies.new(['mcdonalds']).get_ny_companies
+      expect(nycompanies).to eq([])
     end
 
     it "successfully accepts just 1 name and no addresses" do
-      company = double(:company) 
       comp_json = {"name"=>"No Name Company",
                    "permalink"=>"no-name-company",
                    "homepage_url"=>"",
@@ -88,9 +82,9 @@ describe NYCompanies do
 
       company.stub(body: comp_json)
       Net::HTTP.stub(:get_response).and_return(company)
-      ny_companies = @companies.get_ny_companies(['no-name-company'])
-
-      expect(ny_companies).to eq([@companies.csv_hash(JSON.parse(company.body))])
+      nycompanies = NYCompanies.new(['no-name-company']).get_ny_companies
+      company = Company.new('no-name-company')
+      expect(company).to eq(nycompanies[0])
     end
   end
 end
