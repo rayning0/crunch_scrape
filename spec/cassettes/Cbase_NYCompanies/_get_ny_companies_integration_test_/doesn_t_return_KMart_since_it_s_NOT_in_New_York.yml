@@ -1,0 +1,188 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.crunchbase.com/v/1/company/kmart.js?api_key=an35bya6x7ktkm5z7q3q6dvg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.crunchbase.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Date:
+      - Wed, 12 Feb 2014 15:30:56 GMT
+      Etag:
+      - '"c96c7ff9f9fffc824404e22a8797c413"'
+      Server:
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+      Status:
+      - 200 OK
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1b-19.mashery.com
+      X-Powered-By:
+      - ''
+      X-Runtime:
+      - '0.01383'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {"name": "KMart",
+         "permalink": "kmart",
+         "crunchbase_url": "http://www.crunchbase.com/company/kmart",
+         "homepage_url": "http://kmart.com",
+         "blog_url": "",
+         "blog_feed_url": "",
+         "twitter_username": "KmartDeals",
+         "category_code": "ecommerce",
+         "number_of_employees": null,
+         "founded_year": null,
+         "founded_month": null,
+         "founded_day": null,
+         "deadpooled_year": null,
+         "deadpooled_month": null,
+         "deadpooled_day": null,
+         "deadpooled_url": null,
+         "tag_list": null,
+         "alias_list": "",
+         "email_address": "",
+         "phone_number": "",
+         "description": "",
+         "created_at": "Thu May 02 14:31:17 UTC 2013",
+         "updated_at": "Mon Feb 10 07:06:04 UTC 2014",
+         "overview": "\u003Cp\u003EKmart, a member of the Sears Holdings Corporation (NASDAQ: SHLD) family of companies, is a mass merchandising retailer that offers customers quality products through a portfolio of exclusive brands and labels such as Craftsman, Kenmore, DieHard, Jaclyn Smith, Joe Boxer, Route 66 and Country Living. We operate over 1,300 Kmart stores with over 1,000 in-store pharmacies across 49 states, Guam, Puerto Rico, and the U.S. Virgin Islands. This includes discount stores, averaging 92,000 square feet, and Super Centers, averaging 165,000 square feet. We also offer a wide selection of merchandise through kmart.com.\u003C/p\u003E",
+         "image":
+          {"available_sizes":
+            [[[133,
+               38],
+              "assets/images/resized/0041/1309/411309v1-max-150x150.jpg"],
+             [[133,
+               38],
+              "assets/images/resized/0041/1309/411309v1-max-250x250.jpg"],
+             [[133,
+               38],
+              "assets/images/resized/0041/1309/411309v1-max-450x450.jpg"]],
+           "attribution": null},
+         "products":
+          [],
+         "relationships":
+          [{"is_past": true,
+            "title": "President / COO / CEO",
+            "person":
+             {"first_name": "Julian",
+              "last_name": "C. Day",
+              "permalink": "julian-c-day"}},
+           {"is_past": true,
+            "title": "President and Chief Operating Officer ( USA) \u0026 former member",
+            "person":
+             {"first_name": "Warren",
+              "last_name": "Flick",
+              "permalink": "warren-flick"}},
+           {"is_past": true,
+            "title": "DVP \u0026 Chief Systems Architect",
+            "person":
+             {"first_name": "Paul",
+              "last_name": "Gaffney",
+              "permalink": "paul-gaffney"}},
+           {"is_past": true,
+            "title": "President and Chief Executive Officer",
+            "person":
+             {"first_name": "Aylwin",
+              "last_name": "B. Lewis",
+              "permalink": "aylwin-b-lewis"}},
+           {"is_past": true,
+            "title": "SVP, HR",
+            "person":
+             {"first_name": "Tim",
+              "last_name": "Crow",
+              "permalink": "tim-crow"}},
+           {"is_past": true,
+            "title": "Manager, Technology",
+            "person":
+             {"first_name": "Thomas",
+              "last_name": "DeCoe",
+              "permalink": "thomas-decoe"}},
+           {"is_past": true,
+            "title": "Corporate Strategy Intern/Consultant",
+            "person":
+             {"first_name": "Melinda",
+              "last_name": "Byerley",
+              "permalink": "melinda-byerley"}}],
+         "competitions":
+          [],
+         "providerships":
+          [],
+         "total_money_raised": "$0",
+         "funding_rounds":
+          [],
+         "investments":
+          [],
+         "acquisition": null,
+         "acquisitions":
+          [],
+         "offices":
+          [{"description": "",
+            "address1": "3333 Beverly Rd",
+            "address2": "Hoffman Estates,",
+            "zip_code": "60110",
+            "city": "",
+            "state_code": "IL",
+            "country_code": "USA",
+            "latitude": null,
+            "longitude": null}],
+         "milestones":
+          [{"id": 47178,
+            "description": " Kmart Raises Record $21.9 Million for St. Jude Thanks and Giving\u00ae Campaign\t",
+            "stoned_year": 2014,
+            "stoned_month": 2,
+            "stoned_day": 6,
+            "source_url": "http://www.prnewswire.com/news-releases/kmart-raises-record-219-million-for-st-jude-thanks-and-giving-campaign-244048221.html",
+            "source_text": "",
+            "source_description": " Kmart Raises Record $21.9 Million for St. Jude Thanks and Giving\u00ae Campaign\t",
+            "stoneable_type": "Company",
+            "stoned_value": null,
+            "stoned_value_type": null,
+            "stoned_acquirer": null,
+            "stoneable":
+             {"name": "KMart",
+              "permalink": "kmart"}}],
+         "ipo": null,
+         "video_embeds":
+          [],
+         "screenshots":
+          [{"available_sizes":
+             [[[150,
+                97],
+               "assets/images/resized/0041/1310/411310v1-max-150x150.jpg"],
+              [[250,
+                161],
+               "assets/images/resized/0041/1310/411310v1-max-250x250.jpg"],
+              [[450,
+                291],
+               "assets/images/resized/0041/1310/411310v1-max-450x450.jpg"]],
+            "attribution": null}],
+         "external_links":
+          [],
+         "partners":
+          []}
+    http_version: 
+  recorded_at: Wed, 12 Feb 2014 15:30:59 GMT
+recorded_with: VCR 2.8.0

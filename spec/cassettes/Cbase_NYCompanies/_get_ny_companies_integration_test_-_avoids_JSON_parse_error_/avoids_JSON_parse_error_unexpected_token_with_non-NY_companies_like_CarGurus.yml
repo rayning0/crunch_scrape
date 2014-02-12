@@ -1,0 +1,159 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.crunchbase.com/v/1/company/cargurus.js?api_key=an35bya6x7ktkm5z7q3q6dvg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - api.crunchbase.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Date:
+      - Wed, 12 Feb 2014 15:30:57 GMT
+      Etag:
+      - '"33157e4a1c00dbad004efae9e20b1580"'
+      Server:
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+      Status:
+      - 200 OK
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1b-18.mashery.com
+      X-Powered-By:
+      - ''
+      X-Runtime:
+      - '0.01679'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"name\": \"CarGurus\",\n \"permalink\": \"cargurus\",\n \"crunchbase_url\":
+        \"http://www.crunchbase.com/company/cargurus\",\n \"homepage_url\": \"http://www.cargurus.com\",\n
+        \"blog_url\": \"http://blog.cargurus.com/\",\n \"blog_feed_url\": \"http://blog.cargurus.com/feed\",\n
+        \"twitter_username\": \"CarGurus\",\n \"category_code\": \"web\",\n \"number_of_employees\":
+        47,\n \"founded_year\": 2006,\n \"founded_month\": null,\n \"founded_day\":
+        null,\n \"deadpooled_year\": null,\n \"deadpooled_month\": null,\n \"deadpooled_day\":
+        null,\n \"deadpooled_url\": null,\n \"tag_list\": \"cars, shopping, auto,
+        price-comparison, qa, classifieds\",\n \"alias_list\": null,\n \"email_address\":
+        \"\",\n \"phone_number\": \"617-234-5502\",\n \"description\": \"Car Shopping
+        and Community\",\n \"created_at\": \"Sun Feb 17 02:26:00 UTC 2008\",\n \"updated_at\":
+        \"Mon Jan 20 03:53:38 UTC 2014\",\n \"overview\": \"\\u003Cp\\u003EA comparison
+        shopping site for automobiles that uses proprietary pricing algorithms to
+        analyze millions of new and used car listings to help consumers find the best
+        deals\x14 and avoid bad deals \x14in their local area. Users share information,
+        including reviews of dealers, mechanics, and cars and advice on other car
+        topics.\\u003C/p\\u003E\",\n \"image\":\n  {\"available_sizes\":\n    [[[150,\n
+        \      38],\n      \"assets/images/resized/0002/2167/22167v1-max-150x150.png\"],\n
+        \    [[250,\n       64],\n      \"assets/images/resized/0002/2167/22167v1-max-250x250.png\"],\n
+        \    [[257,\n       66],\n      \"assets/images/resized/0002/2167/22167v1-max-450x450.png\"]],\n
+        \  \"attribution\": null},\n \"products\":\n  [],\n \"relationships\":\n  [{\"is_past\":
+        false,\n    \"title\": \"CEO\",\n    \"person\":\n     {\"first_name\": \"Langley\",\n
+        \     \"last_name\": \"Steinert\",\n      \"permalink\": \"langley-steinert\"}},\n
+        \  {\"is_past\": false,\n    \"title\": \"Vice President, Business Development\",\n
+        \   \"person\":\n     {\"first_name\": \"Martha\",\n      \"last_name\": \"(Marty)
+        Blue\",\n      \"permalink\": \"martha-marty-blue\"}},\n   {\"is_past\": false,\n
+        \   \"title\": \"VP of Technology\",\n    \"person\":\n     {\"first_name\":
+        \"Oliver\",\n      \"last_name\": \"Chrzan\",\n      \"permalink\": \"oliver-chrzan\"}},\n
+        \  {\"is_past\": false,\n    \"title\": \"Director of Engineering\",\n    \"person\":\n
+        \    {\"first_name\": \"Jasper\",\n      \"last_name\": \"Rosenberg\",\n      \"permalink\":
+        \"jasper-rosenberg\"}},\n   {\"is_past\": false,\n    \"title\": \"Software
+        Engineer\",\n    \"person\":\n     {\"first_name\": \"Steve\",\n      \"last_name\":
+        \"Wollkind\",\n      \"permalink\": \"steve-wollkind\"}},\n   {\"is_past\":
+        false,\n    \"title\": \"Software Engineer\",\n    \"person\":\n     {\"first_name\":
+        \"Dave\",\n      \"last_name\": \"Galvin\",\n      \"permalink\": \"dave-galvin\"}},\n
+        \  {\"is_past\": false,\n    \"title\": \"Senior Architect\",\n    \"person\":\n
+        \    {\"first_name\": \"Igor\",\n      \"last_name\": \"Kaplansky\",\n      \"permalink\":
+        \"igor-kaplansky\"}},\n   {\"is_past\": false,\n    \"title\": \"Manager of
+        Public Relations\",\n    \"person\":\n     {\"first_name\": \"Amy\",\n      \"last_name\":
+        \"Mueller\",\n      \"permalink\": \"amy-mueller-2\"}},\n   {\"is_past\":
+        false,\n    \"title\": \"Board Member\",\n    \"person\":\n     {\"first_name\":
+        \"Stephen\",\n      \"last_name\": \"Kaufer\",\n      \"permalink\": \"stephen-kaufer\"}},\n
+        \  {\"is_past\": true,\n    \"title\": \"CTO\",\n    \"person\":\n     {\"first_name\":
+        \"Nicholas\",\n      \"last_name\": \"Shanny\",\n      \"permalink\": \"nicholas-shanny\"}},\n
+        \  {\"is_past\": true,\n    \"title\": \"Senior Architect\",\n    \"person\":\n
+        \    {\"first_name\": \"Yoav\",\n      \"last_name\": \"Shapira\",\n      \"permalink\":
+        \"yoav-shapira\"}}],\n \"competitions\":\n  [{\"competitor\":\n     {\"name\":
+        \"Cars.com\",\n      \"permalink\": \"cars-com\"}},\n   {\"competitor\":\n
+        \    {\"name\": \"AutoTrader.com\",\n      \"permalink\": \"autotrader\"}}],\n
+        \"providerships\":\n  [],\n \"total_money_raised\": \"$0\",\n \"funding_rounds\":\n
+        \ [],\n \"investments\":\n  [],\n \"acquisition\": null,\n \"acquisitions\":\n
+        \ [],\n \"offices\":\n  [{\"description\": \"Boston Office\",\n    \"address1\":
+        \"1 Bow Street, 4th Floor\",\n    \"address2\": \"\",\n    \"zip_code\": \"02138\",\n
+        \   \"city\": \"Cambridge\",\n    \"state_code\": \"MA\",\n    \"country_code\":
+        \"USA\",\n    \"latitude\": 42.3721178,\n    \"longitude\": -71.1158326}],\n
+        \"milestones\":\n  [{\"id\": 23453,\n    \"description\": \"Ranked 96th in
+        Inc's 2011 list of the 500 fastest-growing private companies in the U.S.\",\n
+        \   \"stoned_year\": 2011,\n    \"stoned_month\": null,\n    \"stoned_day\":
+        null,\n    \"source_url\": \"http://www.inc.com/inc5000/profile/cargurus\",\n
+        \   \"source_text\": null,\n    \"source_description\": \"2011 Inc 500\",\n
+        \   \"stoneable_type\": \"Company\",\n    \"stoned_value\": null,\n    \"stoned_value_type\":
+        null,\n    \"stoned_acquirer\": null,\n    \"stoneable\":\n     {\"name\":
+        \"CarGurus\",\n      \"permalink\": \"cargurus\"}},\n   {\"id\": 29427,\n
+        \   \"description\": \"Auto shopping site CarGurus grows into new Cambridge
+        office space; approaches $40 million in revenues\",\n    \"stoned_year\":
+        2013,\n    \"stoned_month\": 1,\n    \"stoned_day\": 16,\n    \"source_url\":
+        \"http://www.boston.com/business/technology/innoeco/2013/01/auto_shopping_site_cargurus_gr.html\",\n
+        \   \"source_text\": null,\n    \"source_description\": \"Auto shopping site
+        CarGurus grows into new Cambridge office space; approaches $40 million in
+        revenues\",\n    \"stoneable_type\": \"Company\",\n    \"stoned_value\": null,\n
+        \   \"stoned_value_type\": null,\n    \"stoned_acquirer\": null,\n    \"stoneable\":\n
+        \    {\"name\": \"CarGurus\",\n      \"permalink\": \"cargurus\"}},\n   {\"id\":
+        45962,\n    \"description\": \"Boston Globe Media Partners LLC, whose properties
+        include The Boston Globe, BostonGlobe.com, and Boston.com, said Wednesday
+        that CarGurus.com will power all new and used car searches on Boston.com,
+        starting on Jan. 1.\",\n    \"stoned_year\": 2014,\n    \"stoned_month\":
+        1,\n    \"stoned_day\": 1,\n    \"source_url\": \"http://www.bostonglobe.com/business/2013/12/18/boston-com-partners-with-cargurus-com-power-online-car-searches/V9SnspbxzicewatDyRjdoK/story.html\",\n
+        \   \"source_text\": null,\n    \"source_description\": \"Boston.com to work
+        with CarGurus\",\n    \"stoneable_type\": \"Company\",\n    \"stoned_value\":
+        null,\n    \"stoned_value_type\": null,\n    \"stoned_acquirer\": null,\n
+        \   \"stoneable\":\n     {\"name\": \"CarGurus\",\n      \"permalink\": \"cargurus\"}}],\n
+        \"ipo\": null,\n \"video_embeds\":\n  [{\"embed_code\": \"\\u003Cobject width=\\\"420\\\"
+        height=\\\"245\\\" id=\\\"msnbc1181a9\\\" classid=\\\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\\\"
+        codebase=\\\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0\\\"\\u003E\\u003Cparam
+        name=\\\"movie\\\" value=\\\"http://www.msnbc.msn.com/id/32545640\\\" /\\u003E\\u003Cparam
+        name=\\\"FlashVars\\\" value=\\\"launch=51731038\\u0026amp;width=420\\u0026amp;height=245\\\"
+        /\\u003E\\u003Cparam name=\\\"allowScriptAccess\\\" value=\\\"always\\\" /\\u003E\\u003Cparam
+        name=\\\"allowFullScreen\\\" value=\\\"true\\\" /\\u003E\\u003Cparam name=\\\"wmode\\\"
+        value=\\\"transparent\\\" /\\u003E\\u003Cembed name=\\\"msnbc1181a9\\\" src=\\\"http://www.msnbc.msn.com/id/32545640\\\"
+        width=\\\"420\\\" height=\\\"245\\\" FlashVars=\\\"launch=51731038\\u0026amp;width=420\\u0026amp;height=245\\\"
+        allowscriptaccess=\\\"always\\\" allowFullScreen=\\\"true\\\" wmode=\\\"transparent\\\"
+        type=\\\"application/x-shockwave-flash\\\" pluginspage=\\\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\\\"\\u003E\\u003C/embed\\u003E\\u003C/object\\u003E\\u003Cp
+        style=\\\"font-size:11px; font-family:Arial, Helvetica, sans-serif; color:
+        #999; margin-top: 5px; background: transparent; text-align: center; width:
+        420px;\\\"\\u003EVisit NBCNews.com for \\u003Ca style=\\\"text-decoration:none
+        !important; border-bottom: 1px dotted #999 !important; font-weight:normal
+        !important; height: 13px; color:#5799DB !important;\\\" href=\\\"http://www.nbcnews.com\\\"\\u003Ebreaking
+        news\\u003C/a\\u003E, \\u003Ca href=\\\"http://www.msnbc.msn.com/id/3032507\\\"
+        style=\\\"text-decoration:none !important; border-bottom: 1px dotted #999
+        !important; font-weight:normal !important; height: 13px; color:#5799DB !important;\\\"\\u003Eworld
+        news\\u003C/a\\u003E, and \\u003Ca href=\\\"http://www.msnbc.msn.com/id/3032072\\\"
+        style=\\\"text-decoration:none !important; border-bottom: 1px dotted #999
+        !important; font-weight:normal !important; height: 13px; color:#5799DB !important;\\\"\\u003Enews
+        about the economy\\u003C/a\\u003E\\u003C/p\\u003E\",\n    \"description\":
+        \"\\u003Cp\\u003EHow to find the best used car deals\\u003C/p\\u003E\"}],\n
+        \"screenshots\":\n  [],\n \"external_links\":\n  [{\"external_url\": \"http://www.bizjournals.com/boston/blog/bottom_line/2013/05/bbj-best-places-to-work.html\",\n
+        \   \"title\": \"BBJ names 2013's Best Places to Work in Massachusetts\"},\n
+        \  {\"external_url\": \"https://www.jeanchatzky.com/smart-spending/try-it-out-tuesday-comparing-used-cars-with-cargurus/\",\n
+        \   \"title\": \"Try-It-Out Tuesday: Comparing Used Cars with CarGurus\"},\n
+        \  {\"external_url\": \"http://www.drivingsales.com/blogs/TheTruthAboutCarGurus/2013/05/21/the-truth-about-cargurus\",\n
+        \   \"title\": \"The Truth About CarGurus\"}],\n \"partners\":\n  []}"
+    http_version: 
+  recorded_at: Wed, 12 Feb 2014 15:30:59 GMT
+recorded_with: VCR 2.8.0

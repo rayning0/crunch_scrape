@@ -1,13 +1,13 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'version'
+require 'cbase/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "cbase"
   spec.version       = Cbase::VERSION
-  spec.authors       = ["Justin Leitgeb"]
-  spec.email         = ["justin@stackbuilders.com"]
+  spec.authors       = ["Raymond Gan"]
+  spec.email         = ["rgan@stackbuilders.com"]
   spec.summary       = %q{Parses crunchbase summaries}
   spec.description   = %q{Parses daily summaries and detail pages for cbase.}
   spec.homepage      = ""
