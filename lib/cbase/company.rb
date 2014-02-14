@@ -1,33 +1,26 @@
 class Cbase::Company
-  attr_reader :permalink, :name, :url, :phone, :offices, :nyaddress, 
-              :email, :mgmt_team, :person, :job
+  attr_reader :company, :name, :permalink, :phone, :offices, :city, :email
 
   NO_PERSON = {"title" => nil, "person" => {"first_name" => nil, "last_name" => nil}}
 
-  def initialize(permalink)
-    @permalink = permalink
-    company = company_hash
-
+  def initialize(company)
     @name = company["name"]
-    @url = "=HYPERLINK(\"#{company["homepage_url"]}\")"
+    @permalink = company["permalink"]
     @phone = company["phone_number"]
     @offices = company["offices"]
-    @nyaddress = get_ny_address
+    @city = company["city"]
     @email = company["email_address"]
-    @mgmt_team = "=HYPERLINK(\"https://www.google.com/search?q='management+team'+#{permalink}\")"
-
-    top = company["relationships"][0..2].map {|person| person.nil? ? NO_PERSON : person}
-    @person = top[0..2].map {|p| "#{p["person"]["first_name"]} #{p["person"]["last_name"]}"}
-    @job = top[0..2].map {|p| p["title"]}
+    @url = company["homepage_url"]
+    @people = company["relationships"][0..2]
   end
 
   def ==(other)
-    permalink == other.permalink &&
-      name == other.name &&
+    name == other.name &&
+      permalink == other.permalink &&
       url == other.url &&
       phone == other.phone &&
       offices == other.offices &&
-      nyaddress == other.nyaddress &&
+      address == other.address &&
       email == other.email &&
       person[0] == other.person[0] &&
       person[1] == other.person[1] &&
@@ -37,23 +30,34 @@ class Cbase::Company
       job[2] == other.job[2]
   end
 
-  def company_hash
-    company_url = "http://api.crunchbase.com/v/1/company/#{permalink}.js?api_key=#{Cbase::CompanyList::API_KEY}"
-    response = Net::HTTP.get_response(URI(company_url))
-    
-    # Prevent JSON parse error ("unexpected token")
-    response = response.body.gsub(/(?<=\"overview\"\:)(.*)(?=\,\n\s\"image\"\:)/, "null")
-    JSON.parse(response)
-  end 
+  def url
+    "=HYPERLINK(\"#{@url}\")"
+  end
 
-  def get_ny_address
-    if in_ny?
-      ny = offices.select {|office| office["city"] == "New York"}[0]
-      "#{ny["address1"]} #{ny["address2"]} New York"
+  def mgmt_team
+    "=HYPERLINK(\"https://www.google.com/search?q='management+team'+#{permalink}\")"
+  end
+
+  def in_city?
+    offices.map{|office| office["city"]}.include?(city)
+  end
+
+  def address
+    if in_city?
+      off = offices.select {|office| office["city"] == city}[0]
+      "#{off["address1"]} #{off["address2"]} #{city}"
     end
   end
 
-  def in_ny?
-    offices.map{|office| office["city"]}.include?("New York")
+  def top_people
+    @people[0..2].map {|person| person.nil? ? NO_PERSON : person}
+  end
+
+  def person
+    top_people[0..2].map {|p| "#{p["person"]["first_name"]} #{p["person"]["last_name"]}"}
+  end
+
+  def job
+    top_people[0..2].map {|person| person["title"]}
   end
 end

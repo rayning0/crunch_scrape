@@ -1,4 +1,5 @@
 require 'spec_helper'
 
-# describe Cbase::Client do 
-# end
+describe Cbase::Client do 
+  
+end

@@ -1,3 +1,4 @@
+require 'sqlite3'
 require 'rspec'
 require 'vcr'
 require 'net/http'
