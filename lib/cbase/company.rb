@@ -1,6 +1,8 @@
 class Cbase::Company
   attr_reader :company, :name, :permalink, :phone, :offices, :city, :email
 
+  HEADER = ["Company", "Website", "Phone", "Address", "Email", "Team Page", "Person 1", "Job 1", "Person 2", "Job 2", "Person 3", "Job 3"]
+ 
   NO_PERSON = {"title" => nil, "person" => {"first_name" => nil, "last_name" => nil}}
 
   def initialize(company)
@@ -59,5 +61,14 @@ class Cbase::Company
 
   def job
     top_people[0..2].map {|person| person["title"]}
+  end
+
+  def attributes
+    [name, url, phone, address, email, mgmt_team, 
+     person[0], job[0], person[1], job[1], person[2], job[2]]
+  end
+
+  def to_csv
+    Cbase::CsvFile.new(attributes).to_csv
   end
 end

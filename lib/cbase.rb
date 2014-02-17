@@ -1,8 +1,11 @@
-require_relative "./cbase/version"
-require_relative "./cbase/client"
-require_relative "./cbase/csv_file"
-require_relative "./cbase/company"
-require_relative "./cbase/companies"
+$LOAD_PATH.unshift(File.expand_path('../.') + "/crunch_scrape/lib")
+
+require "cbase/version"
+require "cbase/client"
+require "cbase/csv_file"
+require "cbase/company"
+require "cbase/companies"
+require "cbase/dbase"
 
 require 'sqlite3'
 require 'net/http'
@@ -21,9 +24,7 @@ end
 city = ARGV[0]
 
 #permalinks = Cbase::Client.new.company_permalinks
-#companies = Companies.new(permalinks).companies_in(city)
 
 PERMALINKS = ['wetpaint', 'kmart', 'viacom', 'mcdonalds', 'facebook', 'zwinky', 'headstrong-brain-gym', 'uncle-sams-new-york-llc', 'philo-media', 'cargurus', 'emergingcast']
 
-companies = Cbase::Companies.new(PERMALINKS).companies_in(city)
-Cbase::CsvFile.new(companies).to_csv
+Cbase::Companies.new(PERMALINKS).add_companies_for(city)

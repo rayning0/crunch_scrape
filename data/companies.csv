@@ -1,4 +1,5 @@
 Company,Website,Phone,Address,Email,Team Page,Person 1,Job 1,Person 2,Job 2,Person 3,Job 3
+
 Wetpaint,"=HYPERLINK(""http://wetpaint-inc.com"")",206.859.6300,270 Lafayette Street Suite 505 New York,info@wetpaint.com,"=HYPERLINK(""https://www.google.com/search?q='management+team'+wetpaint"")",Michael Howell,"Co-Founder and VP, Social and Audience Development",Ben Elowitz,Co-Founder/CEO/Board of Directors,Rob Grady,COO/Board of Directors
 Viacom,"=HYPERLINK(""http://www.viacom.com"")",(212) 258-6000,1515 Broadway  New York,"","=HYPERLINK(""https://www.google.com/search?q='management+team'+viacom"")",Philippe Dauman,"President, CEO",Thomas Dooley,"Senior Exec. VP, Chief Admin. Officer, CFO",Scott Saperstein,"VP, Business Development"
 Facebook,"=HYPERLINK(""http://facebook.com"")","",340 Madison Ave  New York,"","=HYPERLINK(""https://www.google.com/search?q='management+team'+facebook"")",Mark Zuckerberg,"Founder and CEO, Board Of Directors",David Ebersman,CFO,Sheryl Sandberg,COO
