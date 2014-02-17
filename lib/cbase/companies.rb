@@ -4,14 +4,14 @@ class Cbase::Companies
   CREATE_TABLE_SQL = "CREATE TABLE IF NOT EXISTS companies (
         id INTEGER PRIMARY KEY, 
         name TEXT NOT NULL UNIQUE,
-        url TEXT,
-        phone TEXT,
-        address TEXT,
-        email TEXT,
-        mgmt_team TEXT,
+        url TEXT, phone TEXT, address TEXT,
+        email TEXT, mgmt_team TEXT,
         person0 TEXT, job0 TEXT,
         person1 TEXT, job1 TEXT,
         person2 TEXT, job2 TEXT);"
+
+  CREATE_INDEX_SQL = "CREATE UNIQUE INDEX name_index 
+        on companies (name);"
 
   INSERT_SQL = "INSERT INTO companies ( 
     name, url, phone, address, email, mgmt_team, 
@@ -23,10 +23,10 @@ class Cbase::Companies
   end
 
   def add_companies_for(city)
-    if Cbase::CsvFile.exists? || Cbase::Dbase.exists?
-      puts "You already have database or CSV file in /data directory. To overwrite them, delete both first, then restart this program."
-      exit
-    else 
+    # if Cbase::CsvFile.exists? || Cbase::Dbase.exists?
+    #   puts "You already have database or CSV file in /data directory. To overwrite them, delete both first, then restart this program."
+    #   exit
+    # else 
       setup_csv_file
       db, dbase = setup_db
       permalinks.each do |permalink|
@@ -37,7 +37,7 @@ class Cbase::Companies
           dbase.insert(db, INSERT_SQL, company.attributes)
         end
       end
-    end
+    # end
   end
 
   def setup_csv_file
@@ -45,7 +45,7 @@ class Cbase::Companies
   end
 
   def setup_db
-    Cbase::Dbase.new.setup(CREATE_TABLE_SQL)
+    Cbase::Dbase.new.setup(CREATE_TABLE_SQL, CREATE_INDEX_SQL)
   end
 
   def company_hash(permalink, city)

@@ -2,9 +2,10 @@ class Cbase::Dbase
 
   DBNAME = "data/companies.db"
 
-  def setup(create_table_sql)
+  def setup(create_table_sql, create_index_sql)
     db = SQLite3::Database.new(DBNAME) 
-    db.execute(create_table_sql) 
+    db.execute(create_table_sql)
+    db.execute(create_index_sql) 
     return db, self
   end
 

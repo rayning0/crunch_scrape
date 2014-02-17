@@ -46,8 +46,8 @@ class Cbase::Company
 
   def address
     if in_city?
-      off = offices.select {|office| office["city"] == city}[0]
-      "#{off["address1"]} #{off["address2"]} #{city}"
+      off = offices.select {|office| office["city"].downcase == city.downcase}[0]
+      "#{off["address1"]} #{off["address2"]} #{off["city"]}"
     end
   end
 
