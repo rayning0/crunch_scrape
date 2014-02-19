@@ -1,7 +1,6 @@
-require 'spec_helper'
+require "spec_helper"
 
-describe Cbase::Client do 
-  let(:response) {double(:response)}
+describe Cbase::Client, vcr: true do
 
   let(:comp_hash) do
     {"name"=>"Wetpaint",
@@ -15,20 +14,18 @@ describe Cbase::Client do
      "offices"=>
       [{"address1"=>"710 - 2nd Avenue"}]}
   end
-
+  
   describe "#company_permalinks" do
-    it "returns all company permalinks" do 
-      response.stub(body: "[{\"name\": \"Wetpaint\",\n  \"permalink\": \"wetpaint\",\n  \"category_code\": \"web\"},\n {\"name\": \"AdventNet\",\n  \"permalink\": \"adventnet\",\n  \"category_code\": \"enterprise\"}]")
-      Net::HTTP.stub(:get_response).and_return(response)
-      permalinks = Cbase::Client.new.company_permalinks
-      expect(permalinks).to match_array(["wetpaint", "adventnet"])
+    it "returns all company permalinks" do
+      permalinks = Cbase::Client.new.company_permalinks.sort
+      expect(permalinks[0]).to eq("0nl9")
+      expect(permalinks[1]).to eq("0to60")  
+      expect(permalinks[2]).to eq("1-800-contacts-2")
     end
   end
 
   describe "#company_hash" do
-    it "returns hash data for 1 company" do
-      response.stub(body: comp_hash.to_json)
-      Net::HTTP.stub(:get_response).and_return(response)
+    it "returns hash data for 1 company" do 
       c_hash = Cbase::Client.new("wetpaint").company_hash
       expect(c_hash["name"]).to eq(comp_hash["name"])
       expect(c_hash["homepage_url"]).to eq(comp_hash["homepage_url"])

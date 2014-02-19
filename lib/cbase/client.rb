@@ -9,12 +9,6 @@ class Cbase::Client
     all_companies.map {|company| company["permalink"]}
   end
 
-  def all_companies
-    response = Net::HTTP.get_response(URI(COMPANIES_URL))
-    # gsub is temporary fix for CrunchBase typo in data
-    JSON.parse(response.body.gsub("][", ",\n "))
-  end
-
   def company_hash
     company_url = "http://api.crunchbase.com/v/1/company/#{permalink}.js?api_key=#{API_KEY}"
     response = Net::HTTP.get_response(URI(company_url))
@@ -25,6 +19,13 @@ class Cbase::Client
   end 
 
   private
+
+  def all_companies
+    response = Net::HTTP.get_response(URI(COMPANIES_URL))
+    # gsub is temporary fix for CrunchBase typo in data
+    JSON.parse(response.body.gsub("][", ",\n "))
+  end
+
   API_KEY = "an35bya6x7ktkm5z7q3q6dvg"
   COMPANIES_URL = "http://api.crunchbase.com/v/1/companies.js?api_key=#{API_KEY}"
 end

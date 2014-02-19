@@ -1,5 +1,5 @@
 class Cbase::Company
-  attr_reader :company, :name, :permalink, :phone, :offices, :city, :email
+  attr_reader :company, :name, :permalink, :phone, :offices, :filter_city, :email
 
   HEADER = ["Company", "Website", "Phone", "Address", "Email", "Team Page", "Person 1", "Job 1", "Person 2", "Job 2", "Person 3", "Job 3"]
  
@@ -10,7 +10,7 @@ class Cbase::Company
     @permalink = company["permalink"]
     @phone = company["phone_number"]
     @offices = company["offices"]
-    @city = company["city"]
+    @filter_city = company["filter_city"]
     @email = company["email_address"]
     @url = company["homepage_url"]
     @people = company["relationships"][0..2]
@@ -41,26 +41,26 @@ class Cbase::Company
   end
 
   def in_city?
-    offices.map{|office| office["city"]}.include?(city)
+    offices.map{|office| office["city"]}.include?(filter_city)
   end
 
   def address
     if in_city?
-      off = offices.select {|office| office["city"].downcase == city.downcase}[0]
+      off = offices.select {|office| office["city"].downcase == filter_city.downcase}[0]
       "#{off["address1"]} #{off["address2"]} #{off["city"]}"
     end
   end
 
   def top_people
-    @people[0..2].map {|person| person.nil? ? NO_PERSON : person}
+    @people.map {|person| person.nil? ? NO_PERSON : person}
   end
 
   def person
-    top_people[0..2].map {|p| "#{p["person"]["first_name"]} #{p["person"]["last_name"]}"}
+    top_people.map {|p| "#{p["person"]["first_name"]} #{p["person"]["last_name"]}"}
   end
 
   def job
-    top_people[0..2].map {|person| person["title"]}
+    top_people.map {|person| person["title"]}
   end
 
   def attributes

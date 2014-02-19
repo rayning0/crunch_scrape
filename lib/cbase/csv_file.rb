@@ -7,10 +7,9 @@ class Cbase::CsvFile
     @csv_row = csv_row
   end
 
-  def make_csv_header(header)
+  def self.make_csv_header(header)
     CSV.open(PATH, "wb") do |csv|
       csv << header
-      csv << []
     end
   end
 
@@ -22,5 +21,9 @@ class Cbase::CsvFile
 
   def self.exists?
     File.exist?(PATH)
+  end
+
+  def self.delete_file
+    File.delete(PATH)
   end
 end
