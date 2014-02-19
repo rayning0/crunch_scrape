@@ -3,9 +3,9 @@ require 'spec_helper'
 describe Cbase::CsvFile do
   describe "#make_csv_header" do
     it "makes CSV header for a CSV file" do
-      Cbase::CsvFile.make_csv_header(Cbase::Company::HEADER)
+      Cbase::CsvFile.make_csv_header(Cbase::CompanyInCity::HEADER)
       first_line = IO.readlines(Cbase::CsvFile::PATH).first  
-      expect(CSV.parse(first_line).first).to eq(Cbase::Company::HEADER)
+      expect(CSV.parse(first_line).first).to eq(Cbase::CompanyInCity::HEADER)
     end
   end
 

@@ -7,6 +7,7 @@ require "cbase/csv_file"
 require "cbase/company"
 require "cbase/companies"
 require "cbase/dbase"
+require "cbase/company_in_city"
 
 require 'sqlite3'
 require 'net/http'
@@ -22,7 +23,7 @@ require 'pry'
 #   exit
 # end
 
-# city = ARGV[0]
+# fcity = ARGV[0]
 # argr, argd = false, false
 # ARGV[1..2].each do |arg|
 #   arg = arg.downcase
@@ -47,4 +48,4 @@ require 'pry'
 # Cbase::CsvFile.make_csv_header(Cbase::Company::HEADER)
 # dbase = Cbase::Dbase.setup(Cbase::Companies::CREATE_TABLE, Cbase::Companies::CREATE_INDEX)
 
-# Cbase::Companies.new(PERMALINKS).add_companies_for(city, dbase)
+# Cbase::Companies.new(PERMALINKS).add_companies_for(fcity, dbase)

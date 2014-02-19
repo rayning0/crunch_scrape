@@ -22,26 +22,29 @@ class Cbase::Companies
     @permalinks = permalinks
   end
 
-  def add_companies_for(city, dbase)
+  def add_companies_for(fcity, dbase)
     permalinks.each do |permalink|
-      comp_hash = company_hash(permalink, city)
+      comp_hash = company_hash(permalink)
       company = company_object(comp_hash)
-      if company.in_city?
-        company.to_csv
-        dbase.insert(INSERT_SQL, company.attributes)
+      company_in_city = filtered_company(company, fcity)
+      if company_in_city.in_city?
+        company_in_city.to_csv
+        dbase.insert(INSERT_SQL, company_in_city.attributes)
       end
     end
   end
 
   private
 
-  def company_hash(permalink, city)
-    comp_hash = Cbase::Client.new(permalink).company_hash
-    comp_hash["filter_city"] = city
-    comp_hash
+  def company_hash(permalink)
+    Cbase::Client.new(permalink).company_hash
   end
 
   def company_object(comp_hash)
     Cbase::Company.new(comp_hash)
-  end  
+  end 
+
+  def filtered_company(company, fcity)
+    Cbase::CompanyInCity.new(company, fcity)
+  end 
 end
