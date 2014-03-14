@@ -20,7 +20,7 @@ Or install it yourself as:
  -->
 ## Usage
 
-From command line, type "cbase [city name, in quotes]"
+From command line, type "ruby ./lib/cbase.rb [city name, in quotes]"
 
 ## Contributing
 
