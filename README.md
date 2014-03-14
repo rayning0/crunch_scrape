@@ -1,12 +1,12 @@
 # Cbase
 
-Gets list of all New York City companies from CrunchBase database. Makes CSV file (spreadsheet) of this info for each company:
+Gets list of all companies from CrunchBase database, for a specific city. Makes CSV file (spreadsheet) and SQLite database of this info for each company:
 
 "Company", "Website", "Phone", "Address", "Email", "Team Page", plus the top 3 people and their jobs.
 
-## Installation
+<!--## Installation
 
-Add this line to your application's Gemfile:
+ Add this line to your application's Gemfile:
 
     gem 'cbase'
 
@@ -17,10 +17,10 @@ And then execute:
 Or install it yourself as:
 
     $ gem install cbase
-
+ -->
 ## Usage
 
-TODO: Write usage instructions here
+From command line, type "cbase [city name, in quotes]"
 
 ## Contributing
 

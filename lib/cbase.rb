@@ -16,36 +16,36 @@ require 'csv'
 require 'open-uri'
 require 'pry'
 
-# if ARGV.empty?
-#   puts "This program creates CSV file of all CrunchBase companies in a city. Use it with these options:\n\n"
-#   puts "cbase [city name in quotes, like \"New York\"]\n-d (show difference between this run and last)\n-r (disconnected from Internet during last run and want to resume where you left off)\n\n"
-#   puts "To get all New York City companies, plus both d and r, write: 'cbase \"New York\" -dr'"
-#   exit
-# end
+if ARGV.empty?
+  puts "This program creates CSV file of all CrunchBase companies in a city. Use it with these options:\n\n"
+  puts "ruby ./lib/cbase.rb [city name in quotes, like \"New York\"]\n-d (show difference between this run and last)\n-r (disconnected from Internet during last run and want to resume where you left off)\n\n"
+  puts "To get all New York City companies, plus both d and r, write: 'cbase \"New York\" -dr'"
+  exit
+end
 
-# fcity = ARGV[0]
-# argr, argd = false, false
-# ARGV[1..2].each do |arg|
-#   arg = arg.downcase
-#   if !arg.nil?
-#     argd = arg.downcase.include?("d")
-#     argr = arg.downcase.include?("r")
-#   end
-# end
+fcity = ARGV[0]
+argr, argd = false, false
+ARGV[1..2].each do |arg|
+  arg = arg.downcase
+  if !arg.nil?
+    argd = arg.downcase.include?("d")
+    argr = arg.downcase.include?("r")
+  end
+end
 
-# if !File.exist?(PERMALINK_PATH)
-#   permalinks = Cbase::Client.new.company_permalinks.sort
-#   file = File.open(PERMALINK_PATH, 'w')
-#   file.puts permalinks
-#   file.close
-# end
+if !File.exist?(PERMALINK_PATH)
+  permalinks = Cbase::Client.new.company_permalinks.sort
+  file = File.open(PERMALINK_PATH, 'w')
+  file.puts permalinks
+  file.close
+end
 
-# #read file as array
-# #permalinks = IO.readlines(PERMALINK_PATH).map(&:chomp)
+#read file as array
+#permalinks = IO.readlines(PERMALINK_PATH).map(&:chomp)
 
-# PERMALINKS = ['wetpaint', 'kmart', 'viacom', 'mcdonalds', 'facebook', 'zwinky', 'headstrong-brain-gym', 'uncle-sams-new-york-llc', 'philo-media', 'cargurus', 'emergingcast']
+PERMALINKS = ['wetpaint', 'kmart', 'viacom', 'mcdonalds', 'facebook', 'zwinky', 'headstrong-brain-gym', 'uncle-sams-new-york-llc', 'philo-media', 'cargurus', 'emergingcast']
 
-# Cbase::CsvFile.make_csv_header(Cbase::Company::HEADER)
-# dbase = Cbase::Dbase.setup(Cbase::Companies::CREATE_TABLE, Cbase::Companies::CREATE_INDEX)
+Cbase::CsvFile.make_csv_header(Cbase::CompanyInCity::HEADER)
+dbase = Cbase::Dbase.setup(Cbase::Companies::CREATE_TABLE, Cbase::Companies::CREATE_INDEX)
 
-# Cbase::Companies.new(PERMALINKS).add_companies_for(fcity, dbase)
+Cbase::Companies.new(PERMALINKS).add_companies_for(fcity, dbase)
